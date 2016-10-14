@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/Debug/libcf_cg.a  CMakeFiles/cf_cg.dir/src/window3D.cpp.o CMakeFiles/cf_cg.dir/src/IFS.cpp.o CMakeFiles/cf_cg.dir/src/utils.cpp.o CMakeFiles/cf_cg.dir/src/ORB.cpp.o CMakeFiles/cf_cg.dir/src/LSystem.cpp.o CMakeFiles/cf_cg.dir/src/window2D.cpp.o
+/usr/bin/ranlib ../lib/Debug/libcf_cg.a
