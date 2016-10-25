@@ -30,15 +30,6 @@ int main(int argc, char** argv){
     // read dat file as cf::PointVector type
         std::vector<cf::PointVector> points = cf::readDATFile<cf::PointVector>(filePath);
 
-    /*for (const auto& point : points){
-        std::cout << point << std::endl;
-        coordinateSystem.drawPoint(point);
-    }
-
-    // draw all lines
-    for (size_t i = 1; i < points.size(); ++i)
-        coordinateSystem.drawLine(points[i-1], points[i]);
-    coordinateSystem.drawLine(points.front(), points.back());*/
     coordinateSystem.show();
 
 // wait for user input and draw user points
