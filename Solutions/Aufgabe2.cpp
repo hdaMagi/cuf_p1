@@ -7,8 +7,12 @@
 #include "windowVercorized.hpp"
 #include <vector>
 
+#define MAXITERATIONS 3
 
-int deadline = 10;
+struct rectangle {
+    cf::Point point;
+    cf::Point tallness;
+};
 
 void recDevideSquare(cf::Point px, cf::Point py, cf::WindowVectorized window, int iterations){
 
@@ -60,10 +64,48 @@ void recDevideSquare(cf::Point px, cf::Point py, cf::WindowVectorized window, in
     recDevideSquare(pxSQ4, pySQ4, window, iterations++);
 }
 
-struct rectangle {
-    cf::Point point;
-    cf::Point tallness;
-};
+void recDevideSquare2(std::vector<rectangle> rectangles, cf::WindowVectorized window, int iterations){
+                rectangle r = rectangles.at(0);
+                rectangles.erase(rectangles.begin());
+
+                rectangle leftbottom;
+                leftbottom.point.x = r.point.x;
+                leftbottom.point.y = r.point.y;
+                leftbottom.tallness.x = r.point.x + ((r.tallness.x - r.point.x) / 2);
+                leftbottom.tallness.y = r.point.y + ((r.tallness.y - r.point.y) / 2);
+
+                rectangle lefttop;
+                lefttop.point.x =  r.point.x;
+                lefttop.point.y = leftbottom.tallness.y;
+                lefttop.tallness.x = leftbottom.tallness.x;
+                lefttop.tallness.y = r.tallness.y;
+
+                rectangle rigthbottom;
+                rigthbottom.point.x = leftbottom.tallness.x;
+                rigthbottom.point.y = r.point.y;
+                rigthbottom.tallness.x = r.tallness.x;
+                rigthbottom.tallness.y = leftbottom.tallness.y;
+
+                rectangle rigthtop;
+                rigthtop.point.x = leftbottom.tallness.x;
+                rigthtop.point.y = leftbottom.tallness.y;
+                rigthtop.tallness.x = r.tallness.x;
+                rigthtop.tallness.y = r.tallness.y;
+                window.drawRectangle(rigthtop.point, rigthtop.tallness, -1, cf::Color::BLACK);
+                window.show();
+
+                if ((lefttop.tallness.y - lefttop.point.y) > 2) {
+                    rectangles.push_back(lefttop);
+                    rectangles.push_back(leftbottom);
+                    rectangles.push_back(rigthbottom);
+                }
+
+                if(iterations < MAXITERATIONS){
+                recDevideSquare2(rectangles, window, ++iterations);
+                }
+}
+
+
 
 int main(int argc, char** argv){
     // read intervals from console
@@ -101,55 +143,49 @@ int main(int argc, char** argv){
         r.point.y = px.y;
         r.tallness.x = py.x;
         r.tallness.y = py.y;
-        do {
-            rectangle leftbottom;
-            leftbottom.point.x = r.point.x;
-            leftbottom.point.y = r.point.y;
-            leftbottom.tallness.x = r.point.x + ((r.tallness.x - r.point.x) / 2);
-            leftbottom.tallness.y = r.point.y + ((r.tallness.y - r.point.y) / 2);
+        rectangles.push_back(r);
+        recDevideSquare2(rectangles, window, 1);
+        printf("Everything is done. ");
 
-            rectangle lefttop;
-            lefttop.point.x = leftbottom.point.x;
-            lefttop.point.y = leftbottom.tallness.y;
-            lefttop.tallness.x = leftbottom.tallness.x;
-            lefttop.tallness.y = r.tallness.y;
+//        do {
+//            rectangle leftbottom;
+//            leftbottom.point.x = r.point.x;
+//            leftbottom.point.y = r.point.y;
+//            leftbottom.tallness.x = r.point.x + ((r.tallness.x - r.point.x) / 2);
+//            leftbottom.tallness.y = r.point.y + ((r.tallness.y - r.point.y) / 2);
 
-            rectangle rigthbottom;
-            rigthbottom.point.x = leftbottom.tallness.x;
-            rigthbottom.point.y = leftbottom.point.y;
-            rigthbottom.tallness.x = r.tallness.x;
-            rigthbottom.tallness.y = leftbottom.tallness.y;
+//            rectangle lefttop;
+//            lefttop.point.x = leftbottom.point.x;
+//            lefttop.point.y = leftbottom.tallness.y;
+//            lefttop.tallness.x = leftbottom.tallness.x;
+//            lefttop.tallness.y = r.tallness.y;
 
-            rectangle rigthtop;
-            rigthtop.point.x = leftbottom.tallness.x;
-            rigthtop.point.y = leftbottom.tallness.y;
-            rigthtop.tallness.x = r.tallness.x;
-            rigthtop.tallness.y = r.tallness.y;
-            window.drawRectangle(rigthtop.point, rigthtop.tallness, -1, cf::Color::BLACK);
-            window.show();
+//            rectangle rigthbottom;
+//            rigthbottom.point.x = leftbottom.tallness.x;
+//            rigthbottom.point.y = leftbottom.point.y;
+//            rigthbottom.tallness.x = r.tallness.x;
+//            rigthbottom.tallness.y = leftbottom.tallness.y;
 
-            if ((lefttop.tallness.y - lefttop.point.y) > 2) {
-                rectangles.push_back(lefttop);
-                rectangles.push_back(leftbottom);
-                rectangles.push_back(rigthbottom);
-            }
-            r = rectangles[0];
-            rectangles.erase(rectangles.begin());
+//            rectangle rigthtop;
+//            rigthtop.point.x = leftbottom.tallness.x;
+//            rigthtop.point.y = leftbottom.tallness.y;
+//            rigthtop.tallness.x = r.tallness.x;
+//            rigthtop.tallness.y = r.tallness.y;
+//            window.drawRectangle(rigthtop.point, rigthtop.tallness, -1, cf::Color::BLACK);
+//            window.show();
 
-        } while (rectangles.size() > 0);
+//            if ((lefttop.tallness.y - lefttop.point.y) > 2) {
+//                rectangles.push_back(lefttop);
+//                rectangles.push_back(leftbottom);
+//                rectangles.push_back(rigthbottom);
+//            }
+//            r = rectangles[0];
+//            rectangles.erase(rectangles.begin());
+
+//        } while (rectangles.size() > 0);
         //recDevideSquare(px, py, window, 0);
 
-//        for(int i = 1; i < 100; i++){
-//            std::cout << "\n\n\nPress enter to draw a rectangle\n";
-//            window.waitKey();
 
-//            px = cf::Point(0, 0);
-//            py = cf::Point(window.getWidth() / 2, window.getHeight() / 2);
-
-//            window.drawRectangle(px, py, 2, cf::Color::RED);
-
-//            window.show();
-//        }
         std::cout << "Enter to exit"; cf::Console::readString();
 
     return 0;

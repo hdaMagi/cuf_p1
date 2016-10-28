@@ -27,7 +27,6 @@ int main(int argc, char** argv){
 
 #else
                  image.setColor(i, j, LUT.at((i & j)%256));
-
 #endif
 }
      }
