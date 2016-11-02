@@ -22,8 +22,8 @@ int main(){
 
 // wait for user input and draw user points
     std::cout << "Please set a point\n\n";
-    cf::PointVector pQ[3]; // default values of PointVector: (0 0 1)
-    for (int i=0; i < 3; i++) {
+    cf::PointVector pQ[4]; // default values of PointVector: (0 0 1)
+    for (int i=0; i < 4; i++) {
         coordinateSystem.waitMouseInput(pQ[i][0], pQ[i][1]);
         coordinateSystem.drawPoint(pQ[i], cf::Color::RED);
         coordinateSystem.show();
@@ -37,9 +37,9 @@ int main(){
     cf::Color color = cf::Color(0,0,1);
     for(int i=0; i < 10000; i++) {
         cf::PointVector pNeu;
-        int idxR = getRandom(3);
-        pNeu.setX((pQ[idxR].getX() + pAlt.getX()) / 2);
-        pNeu.setY((pQ[idxR].getY() + pAlt.getY()) / 2);
+        int idxR = getRandom(4);
+        pNeu.setX((pQ[idxR].getX() + pAlt.getX()) / 3);
+        pNeu.setY((pQ[idxR].getY() + pAlt.getY()) / 3);
         if ((i%100) == 0) {
             color = cf::Color((uint8_t)getRandom(255),(uint8_t)getRandom(255),(uint8_t)getRandom(255));
         }

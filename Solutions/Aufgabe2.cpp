@@ -7,64 +7,14 @@
 #include "windowVercorized.hpp"
 #include <vector>
 
-#define MAXITERATIONS 3
+#define MAXITERATIONS 1000
 
 struct rectangle {
     cf::Point point;
     cf::Point tallness;
 };
 
-void recDevideSquare(cf::Point px, cf::Point py, cf::WindowVectorized window, int iterations){
-
-    /*
-     * __|_X
-     *   |
-     *
-     */
-
-    cf::Point pxSQ1 = px;
-    cf::Point pySQ1 = py;
-    pxSQ1.x = (py.x - px.x) / 2;
-    pxSQ1.y = (py.y - px.y) / 2;
-    window.drawRectangle(pxSQ1, pySQ1, -1, cf::Color::BLACK);
-
-    /*
-     * X_|__
-     *   |
-     *
-     */
-    cf::Point pxSQ2 = px;
-    cf::Point pySQ2 = py;
-    pySQ2.x = (py.x - px.x) / 2;
-    pxSQ2.y = (py.y - px.y) / 2;
-    window.drawRectangle(pxSQ2, pySQ2, -1, cf::Color::RED);
-
-    /*
-     * __|__
-     * X |
-     *
-     */
-    cf::Point pxSQ3 = px;
-    cf::Point pySQ3 = py;
-    pySQ3.x = (py.x - px.x) / 2;
-    pySQ3.y = (py.x - px.y) / 2;
-    window.drawRectangle(pySQ3, pxSQ3, -1, cf::Color::RED);
-
-    /*
-     * __|__
-     *   | X
-     *
-     */
-    cf::Point pxSQ4 = px;
-    cf::Point pySQ4 = py;
-    pxSQ4.x = (py.x - px.x) / 2;
-    pySQ4.y = (py.y - px.y) / 2;
-    window.drawRectangle(pySQ4, pxSQ4, -1, cf::Color::RED);
-    window.show();
-    recDevideSquare(pxSQ4, pySQ4, window, iterations++);
-}
-
-void recDevideSquare2(std::vector<rectangle> rectangles, cf::WindowVectorized window, int iterations){
+void recDevideSquare(std::vector<rectangle> rectangles, cf::WindowVectorized window, int iterations){
                 rectangle r = rectangles.at(0);
                 rectangles.erase(rectangles.begin());
 
@@ -101,7 +51,7 @@ void recDevideSquare2(std::vector<rectangle> rectangles, cf::WindowVectorized wi
                 }
 
                 if(iterations < MAXITERATIONS){
-                recDevideSquare2(rectangles, window, ++iterations);
+                recDevideSquare(rectangles, window, ++iterations);
                 }
 }
 
@@ -144,47 +94,8 @@ int main(int argc, char** argv){
         r.tallness.x = py.x;
         r.tallness.y = py.y;
         rectangles.push_back(r);
-        recDevideSquare2(rectangles, window, 1);
+        recDevideSquare(rectangles, window, 1);
         printf("Everything is done. ");
-
-//        do {
-//            rectangle leftbottom;
-//            leftbottom.point.x = r.point.x;
-//            leftbottom.point.y = r.point.y;
-//            leftbottom.tallness.x = r.point.x + ((r.tallness.x - r.point.x) / 2);
-//            leftbottom.tallness.y = r.point.y + ((r.tallness.y - r.point.y) / 2);
-
-//            rectangle lefttop;
-//            lefttop.point.x = leftbottom.point.x;
-//            lefttop.point.y = leftbottom.tallness.y;
-//            lefttop.tallness.x = leftbottom.tallness.x;
-//            lefttop.tallness.y = r.tallness.y;
-
-//            rectangle rigthbottom;
-//            rigthbottom.point.x = leftbottom.tallness.x;
-//            rigthbottom.point.y = leftbottom.point.y;
-//            rigthbottom.tallness.x = r.tallness.x;
-//            rigthbottom.tallness.y = leftbottom.tallness.y;
-
-//            rectangle rigthtop;
-//            rigthtop.point.x = leftbottom.tallness.x;
-//            rigthtop.point.y = leftbottom.tallness.y;
-//            rigthtop.tallness.x = r.tallness.x;
-//            rigthtop.tallness.y = r.tallness.y;
-//            window.drawRectangle(rigthtop.point, rigthtop.tallness, -1, cf::Color::BLACK);
-//            window.show();
-
-//            if ((lefttop.tallness.y - lefttop.point.y) > 2) {
-//                rectangles.push_back(lefttop);
-//                rectangles.push_back(leftbottom);
-//                rectangles.push_back(rigthbottom);
-//            }
-//            r = rectangles[0];
-//            rectangles.erase(rectangles.begin());
-
-//        } while (rectangles.size() > 0);
-        //recDevideSquare(px, py, window, 0);
-
 
         std::cout << "Enter to exit"; cf::Console::readString();
 

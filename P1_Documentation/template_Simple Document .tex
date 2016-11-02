@@ -1,0 +1,46 @@
+\documentclass[]{article}
+%----------------- PAKETE INKLUDIEREN ----------------- %
+
+\usepackage{geometry} % Packet für Seitenrandabständex und Einstellung für Seitenränder
+\usepackage[ngerman]{babel} % deutsche Silbentrennung
+
+\usepackage{booktabs} %entzerrt die Tabellenzeilen und bietet verschieden dicke Unterteilungslinien
+\usepackage{longtable} % Tabellen können sich nicht über mehrere Seiten 
+\usepackage{graphicx} % kann LaTeX Grafiken einbinden
+
+%\usepackage[applemac]{inputenc} % Umlaute unter Mac werden automatisch gesetzt
+\usepackage[T1]{fontenc} % Zeichenencoding
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern} % typographische Qualität 
+\frenchspacing % Schaltet den zusätzlichen Zwischenraum ab
+\usepackage{fix-cm}
+\usepackage{hyperref} % verwandelt alle Kapitelüberschriften, Verweise aufs Literaturverzeichnis und andere Querverweise in PDF-Hyperlinks
+\usepackage{color}
+\usepackage{url}
+
+\usepackage[nottoc]{tocbibind}
+
+% für Listings
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, stepnumber=4, keywordstyle=\color{black}\bfseries\itshape, stringstyle=\ttfamily,showstringspaces=false,basicstyle=\footnotesize,captionpos=b}
+\lstset{language=java}
+%Todos
+
+
+%opening
+\title{Title}
+\author{Jannis Priesnitz}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+
+
+\begin{minipage}{12cm}
+Abstract
+\end{minipage}
+\end{center}
+\section{Sec 1}
+test
+\end{document}

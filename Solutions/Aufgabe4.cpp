@@ -4,7 +4,7 @@
 #include <random>
 #include <string>
 
-#define EXTENDED 0
+#define EXTENDED 1
 
 
 int pascal[513][512];
@@ -24,11 +24,10 @@ int main(int argc, char** argv){
 #if !EXTENDED
              if((i & j) == 0)
              image.setColor(i, j, cf::Color::RED);
-
 #else
                  image.setColor(i, j, LUT.at((i & j)%256));
 #endif
-}
+            }
      }
     image.show();
 
