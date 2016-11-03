@@ -48,7 +48,7 @@ int main(int argc, char** argv){
 
      for(int i = 1; i < 513; i++){
          for(int j = 1; j < 512; j++){
-             if(pascal[i][j] % 7 == 0)
+             if(pascal[i][j] %28 == 0)
                 image.setColor(i, j, cf::Color::BLACK);
          }
      }
