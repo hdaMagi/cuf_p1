@@ -3,16 +3,18 @@
 #include <iostream>
 #include <random>
 #include <string>
+#include "bigInt.h"
 
-int pascal[513][512];
+BigInt::Rossi pascal[513][512];
+BigInt::Rossi BigIntNull(0);
 int main(int argc, char** argv){
 
     for(int i = 0; i < 513; i++){
         for(int j = 0; j < 512; j++){
-            pascal[i][j] = 0;
+            pascal[i][j] = BigIntNull;
         }
     }
-    pascal[0][1] = 1;
+    pascal[0][1] = BigInt::Rossi(1);
 
     for(int i = 1; i < 513; i++){
         for(int j = 1; j < 512; j++){
@@ -37,7 +39,7 @@ int main(int argc, char** argv){
     }
 
 // read image and LUT file
-    cf::WindowRasterized image(513, 512, "bla", cf::Color::RED);
+    cf::WindowRasterized image(513, 512, "Zusatzaufgabe b (mod 10)", cf::Color::RED);
 
     // transform image into pseudo color image
      for (int y = 0; y < image.getHeight(); ++y){
@@ -46,10 +48,12 @@ int main(int argc, char** argv){
         }
      }
 
+     BigInt::Rossi mod(10);
      for(int i = 1; i < 513; i++){
          for(int j = 1; j < 512; j++){
-             if(pascal[i][j] %28 == 0)
+             if((pascal[i][j] % mod) == BigIntNull) {
                 image.setColor(i, j, cf::Color::BLACK);
+             }
          }
      }
 
