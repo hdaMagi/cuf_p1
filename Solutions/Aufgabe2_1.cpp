@@ -30,23 +30,41 @@ int main(int argc, char** argv) {
               << "Interval Y max"     << align << ifs.getRangeY().max         << '\n'
               << "\n\n" << std::endl;
 
-    for (std::size_t i = 0; i < ifs.getNumTransformations(); ++i)
-         std::cout << "Transformation " << i << ": \n" << ifs.getTransformation(i) << std::endl;
 
 
-    cf::WindowRasterized window1(800, 600, "Chaos and Fractals", {0, 0, 0});
-    cf::WindowRasterized window2(800, 600, "Chaos and Fractals", {0, 0, 0});
+    cf::Interval range_x;
+    range_x.min = 0.0;
+    range_x.max = 1.0;
 
-    cf::WindowRasterized FrmImage2D(800, 600, "Chaos and Fractals", {0, 0, 0});
+    cf::Interval range_y;
+    range_y.min = 0.0;
+    range_y.max = 1.0;
+
+    cf::WindowVectorized Vec_Window1(800, range_x, range_y, "Hello world", cf::Color::WHITE);
+
+    cf::WindowVectorized Vec_Window2(800, range_x, range_y, "Hello world", cf::Color::BLACK);
+
+    cf::WindowVectorized FrmImage2D(800, range_x, range_y, "Hello world", cf::Color::BLACK);
 
 
-    glm::vec2();
+    glm::vec3 test;
 
-    cf::Point point;
+    test.x = 0.1;
+    test.y = 0.4;
+    test.z = 1.0;
+
+//    for(float i = 0; i < 0.4; i= i + 0.001){
+//        Vec_Window1.setColor(0.1 + i, 0.4, cf::Color::RED);
+
+//    }
 
 
-point = window1.transformPoint_fromImage_toInterval(point);
+    Vec_Window1.show();
 
+//    cf::Point point;
+
+
+//
 
     std::cout << "Press enter to finish the process";
     cf::Console::waitKey();
