@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
             for (int col = 0; col < oldImage.getHeight(); col++) {
                 if (oldImage.getColor_imageSpace(row, col) != cf::Color::WHITE) {
                     for (int transformation = 0; transformation < ifs.getNumTransformations(); transformation++) {
-                       p = oldImage.transformPoint_fromImage_toInterval(cf::Point(row, col));
+                       p = oldImage.transformPoint_fromImage_toInterval(cf::Point(col, row));
                        glm::vec3 v(p.x, p.y, 1.0);
                        const glm::mat3x3& m = ifs.getTransformation(transformation);
                        v = m * v;
