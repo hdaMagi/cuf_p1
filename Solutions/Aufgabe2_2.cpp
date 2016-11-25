@@ -7,101 +7,52 @@
 int main(int argc, char** argv) {
     cf::Interval range_x;
     range_x.min = 0.0;
-    range_x.max = 300.0;
+    range_x.max = 400.0;
 
 
     cf::Interval range_y;
     range_y.min = 0.0;
-    range_y.max = 400.0;
-    cf::WindowVectorized FrmImage2D(300,  range_x, range_y, "Eingabe", cf::Color::WHITE);
+    range_y.max = 500.0;
+    cf::WindowVectorized FrmImage2D(500,  range_x, range_y, "Eingabe", cf::Color::WHITE);
     do {
-        // KOCH_KURVE
-        for (int row = 400; row > 300; row--) {
-            for (int col = 0; col < 100; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::RED);
-            }
-        }
-        // PEANO_KURVE
-        for (int row = 400; row > 300; row--) {
-            for (int col = 100; col < 200; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::BLUE);
-            }
-        }
-        // BUSCH_1
-        for (int row = 400; row > 300; row--) {
-            for (int col = 200; col < 300; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::GREEN);
-            }
-        }
+        cf::Point btnA3_1(100.0, 400.0); // KOCH_KURVE
+        cf::Point btnA3_2(200.0, 400.0); // PEANO_KURVE
+        cf::Point btnA4_1(300.0, 400.0); // BUSCH_1
 
-        // BUSCH_2
-        for (int row = 300; row > 200; row--) {
-            for (int col = 0; col < 100; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::YELLOW);
-            }
-        }
-        // FARN_1
-        for (int row = 300; row > 200; row--) {
-            for (int col = 100; col < 200; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::MAGENTA);
-            }
-        }
-        // STERN
-        for (int row = 300; row > 200; row--) {
-            for (int col = 200; col < 300; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::ORANGE);
-            }
-        }
+        cf::Point btnA4_2(100.0, 300.0); // BUSCH_2
+        cf::Point btnA2_1(200.0, 300.0); // FARN_1
+        cf::Point btnA2_2(300.0, 300.0); // STERN
 
-        // DOPPELSPIRALE
-        for (int row = 200; row > 100; row--) {
-            for (int col = 0; col < 100; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::BLACK);
-            }
-        }
-        // BAUM_3
-        for (int row = 200; row > 100; row--) {
-            for (int col = 100; col < 200; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::GREY);
-            }
-        }
-        // DRACHENFLAECHE_4
-        for (int row = 200; row > 100; row--) {
-            for (int col = 200; col < 300; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::CYAN);
-            }
-        }
+        cf::Point btnA2_3(100.0, 200.0); // DOPPELSPIRALE
+        cf::Point btnA2_4(200.0, 200.0); // BAUM_3
+        cf::Point btnA2_5(300.0, 200.0); // DRACHENFLAECHE_4
 
-        // BEENDEN
-        for (int row = 100; row > 0; row--) {
-            for (int col = 0; col < 100; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::WHITE);
-            }
-        }
-        // SIERPINSI_VERWANDTER_2
-        for (int row = 100; row > 0; row--) {
-            for (int col = 100; col < 200; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::PINK);
-            }
-        }
-        // BEENDEN
-        for (int row = 100; row > 0; row--) {
-            for (int col = 200; col < 300; col++) {
-                FrmImage2D.setColor(col, row, cf::Color::WHITE);
-            }
-        }
+        cf::Point btnA2_6(200.0, 100.0); // SIERPINSI_VERWANDTER_2
 
+        int btnSize = 100;
+        FrmImage2D.drawRectangle(btnA3_1, btnA3_1, btnSize, cf::Color::RED);
+        FrmImage2D.drawRectangle(btnA3_2, btnA3_2, btnSize, cf::Color::BLUE);
+
+        FrmImage2D.drawRectangle(btnA4_1, btnA4_1, btnSize, cf::Color::GREEN);
+        FrmImage2D.drawRectangle(btnA4_2, btnA4_2, btnSize, cf::Color::YELLOW);
+
+        FrmImage2D.drawRectangle(btnA2_1, btnA2_1, btnSize, cf::Color::MAGENTA);
+        FrmImage2D.drawRectangle(btnA2_2, btnA2_2, btnSize, cf::Color::ORANGE);
+        FrmImage2D.drawRectangle(btnA2_3, btnA2_3, btnSize, cf::Color::BLACK);
+        FrmImage2D.drawRectangle(btnA2_4, btnA2_4, btnSize, cf::Color::GREY);
+        FrmImage2D.drawRectangle(btnA2_5, btnA2_5, btnSize, cf::Color::CYAN);
+        FrmImage2D.drawRectangle(btnA2_6, btnA2_6, btnSize, cf::Color::PINK);
         std::cout << "RED     - Senkrechte Strecke - Koch_kurve_2\n" <<
                      "BLUE    - Senkrechte Strecke - Peano_kurve\n" <<
                      "GREEN   - Waagrechte Strecke - Busch_1\n" <<
                      "YELLOW  - Waagrechte Strecke - Busch_2\n" <<
                      "MAGENTA - n gefuellt Quadrat - Farn_1\n" <<
                      "ORANGE  - n gefuellt Quadrat - Stern\n" <<
-                     "BLACK   - n gefuellt Quadrat - Doppelspirale\n" <<
+                     "WHITE   - n gefuellt Quadrat - Doppelspirale\n" <<
                      "GREY    - n gefuellt Quadrat - Baum_3\n" <<
                      "CYAN    - n gefuellt Quadrat - Drachenflaeche_4\n" <<
                      "PINK    - n gefuellt Quadrat - Sierp_verwandter_1\n" <<
-                     "WHITE   - Beenden" <<
+                     "BLACK   - Beenden" <<
                       std::endl;
         FrmImage2D.show();
 
@@ -150,19 +101,15 @@ int main(int argc, char** argv) {
             oldImage.drawRectangle(cf::Point(0.0, 0.0), cf::Point(1.0, 1.0), 1, cf::Color::BLACK);
         }
         cf::WindowVectorized newImage(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Neues Bild", cf::Color::WHITE);
+
+        cf::Point btn_length(396.0, 196.0);
+        cf::Point btnClose_P1(1.0, 1.0);
+        cf::Point btnNext_P1(1.0, 198.0);
+
         range_y.max = 400.0;
         FrmImage2D.setInterval(range_x, range_y, 400);
-        for (int row = 0; row < FrmImage2D.getWidth(); row++) {
-            for (int col = 0; col < (FrmImage2D.getHeight() / 2); col++) {
-                FrmImage2D.setColor_imageSpace(col, row, cf::Color::GREEN);
-            }
-        }
-
-        for (int row = 0; row < FrmImage2D.getWidth(); row++) {
-            for (int col = (FrmImage2D.getHeight() / 2); col < FrmImage2D.getHeight(); col++) {
-                FrmImage2D.setColor_imageSpace(col, row, cf::Color::RED);
-            }
-        }
+        FrmImage2D.drawRectangle(btnClose_P1, cf::Point(btnClose_P1.x + btn_length.x, btnClose_P1.y + btn_length.y), 1, cf::Color::RED);
+        FrmImage2D.drawRectangle(btnNext_P1, cf::Point(btnNext_P1.x + btn_length.x, btnNext_P1.y + btn_length.y), 1, cf::Color::GREEN);
         FrmImage2D.show();
         oldImage.show();
         cf::Point p;
@@ -192,10 +139,10 @@ int main(int argc, char** argv) {
             }
             oldImage.show();
             newImage.clear();
-        } while(FrmImage2D.getColor(user.x , user.y) == cf::Color::GREEN);
-        range_y.max = 400.0;
+        } while((user.x >  btnNext_P1.x) && (user.x < (btnNext_P1.x + btn_length.x)) && (user.y >  btnNext_P1.y) && (user.y < (btnNext_P1.y + btn_length.y)));
+        range_y.max = 500.0;
         FrmImage2D.clear();
-        FrmImage2D.setInterval(range_x, range_y, range_x.max);
+        FrmImage2D.setInterval(range_x, range_y, 500);
     } while(true);
     return 0;
 }
