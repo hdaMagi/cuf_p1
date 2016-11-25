@@ -13,7 +13,7 @@ int getRandom(int mod) {
     return rand()%mod;
 }
 
-cf::Color getRadomColor(cf::Color withoutColor) {
+cf::Color getRadomColor() {
     cf::Color colors[] = {
                 cf::Color::MAGENTA,
                 cf::Color::ORANGE,
@@ -26,11 +26,20 @@ cf::Color getRadomColor(cf::Color withoutColor) {
                 cf::Color::PINK,
                 cf::Color::RED
     };
-    int idx = getRandom(10);
-    if (colors[idx] == withoutColor) {
-        colors[(idx+1) % 10];
-    } else {
+    int idx = getRandom(11);
+    if (idx < 10) {
         return colors[idx];
+    } else {
+        return cf::Color(getRandom(256), getRandom(256), getRandom(256));
+    }
+}
+
+cf::Color getRadomColor(cf::Color withoutColor) {
+    cf::Color color = getRadomColor();
+    if (color == withoutColor) {
+        return cf::Color(getRandom(256), getRandom(256), getRandom(256));
+    } else {
+        return color;
     }
 }
 
