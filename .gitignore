@@ -1,7 +1,7 @@
 /Debug/
 /Release/
 /.metadata/
-/bin/
+/bin/*
 /3rdparty/
 /cmake/
 CMakeLists.txt.user
