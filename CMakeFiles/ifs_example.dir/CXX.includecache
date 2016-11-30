@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jannis/workspace_chaos_und_fraktale/examples/ifs_example.cpp
+IFS.h
+/home/jannis/workspace_chaos_und_fraktale/examples/IFS.h
+
+include/IFS.h
+utils.h
+include/utils.h
+
+include/utils.h
+string
+-
+vector
+-
+fstream
+-
+sstream
+-
+iostream
+-
+inttypes.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtx/vector_angle.hpp
+-
+glm/gtx/rotate_vector.hpp
+-
+
