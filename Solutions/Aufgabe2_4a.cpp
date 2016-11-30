@@ -7,16 +7,15 @@
 int main(int argc, char** argv) {
     cf::Interval range_x;
     range_x.min = 0.0;
-    range_x.max = 600.0;
+    range_x.max = 101.0;
 
 
     cf::Interval range_y;
     range_y.min = 0.0;
-    range_y.max = 400.0;
+    range_y.max = 101.0;
+    cf::WindowVectorized Image(range_x.max,  range_x, range_y, "Image Ameise", cf::Color::WHITE);
     cf::WindowVectorized FrmImage2D(600,  range_x, range_y, "Eingabe", cf::Color::BLACK);
     // Punkt
-    cf::Point testPoint(0.0, 1.0);
-    FrmImage2D.floodFill(testPoint, cf::Color::BLACK);
     for (int row = 0; row < 200; row++) {
         for (int col = 0; col < 200; col++) {
             FrmImage2D.setColor(row, col, cf::Color::RED);
@@ -68,11 +67,8 @@ int main(int argc, char** argv) {
     cf::IteratedFunctionSystem ifs; // alternative:    cf::IFS ifs;
     ifs.read(filePath+"Sierpinski.ifs");
 
-    cf::WindowVectorized oldImage(400, { 0.0, 1.0}, { 0.0, 1.0}, "(P3+4 A1) Altes Bild", cf::Color::WHITE);
-    cf::WindowVectorized image(400, { 0.0, 1.0}, { 0.0, 1.0}, "(P3+4 A1) Altes Bild", cf::Color::WHITE);
-
-    //cf::WindowVectorized oldImage(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Altes Bild", cf::Color::WHITE);
-    //cf::WindowVectorized image(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Altes Bild", cf::Color::WHITE);
+    cf::WindowVectorized oldImage(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Altes Bild", cf::Color::WHITE);
+    cf::WindowVectorized image(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Altes Bild", cf::Color::WHITE);
     if (eingabe == cf::Color::RED) {
         oldImage.setColor(0.0, 0.0, cf::Color::BLACK);
     } else if (eingabe == cf::Color::BLUE) {;
@@ -100,8 +96,7 @@ int main(int argc, char** argv) {
     } else {
         return 0;
     }
-    //cf::WindowVectorized newImage(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Neues Bild", cf::Color::WHITE);
-    cf::WindowVectorized newImage(400, { 0.0, 1.0}, { 0.0, 1.0}, "(P3+4 A1) Neues Bild", cf::Color::WHITE);
+    cf::WindowVectorized newImage(400, ifs.getRangeX(), ifs.getRangeY(), "(P3+4 A1) Neues Bild", cf::Color::WHITE);
 
     range_x.max = 400.0;
     FrmImage2D.setInterval(range_x, range_y, 400);
@@ -120,45 +115,45 @@ int main(int argc, char** argv) {
     oldImage.show();
     cf::Point p;
     do {
-
-        if ((eingabe == cf::Color::MAGENTA) || (eingabe == cf::Color::ORANGE)) {
-            for (int row = 0; row < oldImage.getWidth(); row++) {
-                for (int col = 0; col < oldImage.getHeight(); col++) {
+        cf::Color color = getRadomColor(cf::Color::WHITE);
+        for (int row = 0; row < oldImage.getWidth(); row++) {
+            for (int col = 0; col < oldImage.getHeight(); col++) {
+                if (oldImage.getColor_imageSpace(row, col) != cf::Color::WHITE) {
                     for (int transformation = 0; transformation < ifs.getNumTransformations(); transformation++) {
-                        p = oldImage.transformPoint_fromImage_toInterval(cf::Point(col, row));
-                        glm::vec3 v(p.x, p.y, 1.0);
-                        const glm::mat3x3& m = ifs.getTransformation(transformation);
-                        v = m * v;
-                        newImage.setColor(v.x, v.y, oldImage.getColor_imageSpace(row, col));
+                       p = oldImage.transformPoint_fromImage_toInterval(cf::Point(col, row));
+                       glm::vec3 v(p.x, p.y, 1.0);
+                       const glm::mat3x3& m = ifs.getTransformation(transformation);
+                       v = m * v;
+                       newImage.setColor(v.x, v.y, color);
                     }
                 }
             }
-        } else {
-            cf::Color color = getRadomColor(cf::Color::WHITE);
-            for (int row = 0; row < oldImage.getWidth(); row++) {
-                for (int col = 0; col < oldImage.getHeight(); col++) {
-                    if (oldImage.getColor_imageSpace(row, col) != cf::Color::WHITE) {
-                        for (int transformation = 0; transformation < ifs.getNumTransformations(); transformation++) {
-                            p = oldImage.transformPoint_fromImage_toInterval(cf::Point(col, row));
-                            glm::vec3 v(p.x, p.y, 1.0);
-                            const glm::mat3x3& m = ifs.getTransformation(transformation);
-                            v = m * v;
-                            newImage.setColor(v.x, v.y, color);
-                        }
-                    }
-                }
-            }
-    }
+        }
         newImage.show();
         FrmImage2D.waitMouseInput(user.x , user.y);
 
         for (int row = 0; row < newImage.getWidth(); row++) {
             for (int col = 0; col < newImage.getHeight(); col++) {
                 cf::Color imageColor = newImage.getColor_imageSpace(row, col);
+                if ((eingabe == cf::Color::MAGENTA) || (eingabe == cf::Color::ORANGE)) {
+                    if (newImage.getColor_imageSpace(row, col) == cf::Color::WHITE) {
+                        imageColor = image.getColor_imageSpace(row, col);
+                    } else {
+                        imageColor = cf::Color::WHITE;
+                    }
+                }
                 oldImage.setColor_imageSpace(row, col, imageColor);
             }
         }
         oldImage.show();
+
+        if ((eingabe == cf::Color::MAGENTA) || (eingabe == cf::Color::ORANGE)) {
+            for (int row = 0; row < newImage.getWidth(); row++) {
+                for (int col = 0; col < newImage.getHeight(); col++) {
+                    oldImage.setColor_imageSpace(row, col, newImage.getColor_imageSpace(row, col));
+                }
+            }
+        }
         newImage.clear();
     } while(FrmImage2D.getColor(user.x , user.y) == cf::Color::GREEN);
     return 0;

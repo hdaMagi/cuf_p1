@@ -135,6 +135,8 @@ struct WindowVectorized : protected Window2D {
     using Window2D::clear;
     using Window2D::show;
 
+    using Window2D::floodFill;
+
 private:
     static int _CALCULATE_HEIGHT(const cf::Interval& range_x, const cf::Interval& range_y, int width){
         float diff_y = range_y.max - range_y.min;
