@@ -2,3 +2,10 @@
 /Release/
 /.metadata/
 /bin/
+/3rdparty/
+/cmake/
+CMakeLists.txt.user
+CMakeLists.txt.user.675818f
+CMakeLists.txt
+createMakeFileProject.sh
+
