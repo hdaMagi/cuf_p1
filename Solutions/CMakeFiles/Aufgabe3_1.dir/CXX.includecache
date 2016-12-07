@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe3_1.cpp
+LSystem.h
+/home/jannis/workspace_chaos_und_fraktale/Solutions/LSystem.h
+
+include/LSystem.h
+string
+-
+vector
+-
+memory
+-
+glm/glm.hpp
+-
+utils.h
+include/utils.h
+
+include/utils.h
+string
+-
+vector
+-
+fstream
+-
+sstream
+-
+iostream
+-
+inttypes.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtx/vector_angle.hpp
+-
+glm/gtx/rotate_vector.hpp
+-
+

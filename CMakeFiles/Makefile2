@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/jannis/workspace_chaos_und_fraktale
 CMakeFiles/lin_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/depend
 	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=35,36 "Built target lin_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=39,40 "Built target lin_example"
 .PHONY : CMakeFiles/lin_example.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/lin_example.dir/clean
 CMakeFiles/window_3D_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/depend
 	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=47,48 "Built target window_3D_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=51,52 "Built target window_3D_example"
 .PHONY : CMakeFiles/window_3D_example.dir/all
 
 # Include target in all.
@@ -140,7 +140,7 @@ clean: CMakeFiles/window_3D_example.dir/clean
 CMakeFiles/image_operations_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/depend
 	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=33,34 "Built target image_operations_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=37,38 "Built target image_operations_example"
 .PHONY : CMakeFiles/image_operations_example.dir/all
 
 # Include target in all.
@@ -177,7 +177,7 @@ clean: CMakeFiles/image_operations_example.dir/clean
 CMakeFiles/cf_cg.dir/all:
 	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/depend
 	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=21,22,23,24,25,26,27,28 "Built target cf_cg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target cf_cg"
 .PHONY : CMakeFiles/cf_cg.dir/all
 
 # Include target in all.
@@ -214,7 +214,7 @@ clean: CMakeFiles/cf_cg.dir/clean
 CMakeFiles/windowRasterized_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/depend
 	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=43,44 "Built target windowRasterized_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=47,48 "Built target windowRasterized_example"
 .PHONY : CMakeFiles/windowRasterized_example.dir/all
 
 # Include target in all.
@@ -251,7 +251,7 @@ clean: CMakeFiles/windowRasterized_example.dir/clean
 CMakeFiles/orb_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/depend
 	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=37,38 "Built target orb_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=41,42 "Built target orb_example"
 .PHONY : CMakeFiles/orb_example.dir/all
 
 # Include target in all.
@@ -288,7 +288,7 @@ clean: CMakeFiles/orb_example.dir/clean
 CMakeFiles/terrain.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/depend
 	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=41,42 "Built target terrain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=45,46 "Built target terrain"
 .PHONY : CMakeFiles/terrain.dir/all
 
 # Include target in all.
@@ -325,7 +325,7 @@ clean: CMakeFiles/terrain.dir/clean
 CMakeFiles/ifs_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/ifs_example.dir/build.make CMakeFiles/ifs_example.dir/depend
 	$(MAKE) -f CMakeFiles/ifs_example.dir/build.make CMakeFiles/ifs_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=31,32 "Built target ifs_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=35,36 "Built target ifs_example"
 .PHONY : CMakeFiles/ifs_example.dir/all
 
 # Include target in all.
@@ -362,7 +362,7 @@ clean: CMakeFiles/ifs_example.dir/clean
 CMakeFiles/small_examples.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/small_examples.dir/build.make CMakeFiles/small_examples.dir/depend
 	$(MAKE) -f CMakeFiles/small_examples.dir/build.make CMakeFiles/small_examples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=39,40 "Built target small_examples"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=43,44 "Built target small_examples"
 .PHONY : CMakeFiles/small_examples.dir/all
 
 # Include target in all.
@@ -399,7 +399,7 @@ clean: CMakeFiles/small_examples.dir/clean
 CMakeFiles/windowVectorized_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/depend
 	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=45,46 "Built target windowVectorized_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=49,50 "Built target windowVectorized_example"
 .PHONY : CMakeFiles/windowVectorized_example.dir/all
 
 # Include target in all.
@@ -436,7 +436,7 @@ clean: CMakeFiles/windowVectorized_example.dir/clean
 CMakeFiles/computerGeometry_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/depend
 	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=29,30 "Built target computerGeometry_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=33,34 "Built target computerGeometry_example"
 .PHONY : CMakeFiles/computerGeometry_example.dir/all
 
 # Include target in all.
@@ -470,30 +470,34 @@ clean: CMakeFiles/computerGeometry_example.dir/clean
 # Directory level rules for directory Solutions
 
 # Convenience name for "all" pass in the directory.
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_4a.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe1_3.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe2_1.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
 Solutions/all: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe1_4.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe1_2.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe2_3.dir/all
 Solutions/all: Solutions/CMakeFiles/Aufgabe2_1b.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe3_1.dir/all
 Solutions/all: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
-Solutions/all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
-Solutions/all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
 
 .PHONY : Solutions/all
 
 # Convenience name for "clean" pass in the directory.
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe1_3.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe2_1.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe1_4.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe1_2.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe2_3.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe3_1.dir/clean
 Solutions/clean: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
-Solutions/clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
-Solutions/clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
 
 .PHONY : Solutions/clean
 
@@ -501,6 +505,43 @@ Solutions/clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
 Solutions/preinstall:
 
 .PHONY : Solutions/preinstall
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_4a.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=17,18 "Built target Aufgabe2_4a"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+# Convenience name for target.
+Aufgabe2_4a: Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+.PHONY : Aufgabe2_4a
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target Solutions/CMakeFiles/Aufgabe1_3.dir
@@ -577,13 +618,87 @@ clean: Solutions/CMakeFiles/Aufgabe2_1.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_2.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=13,14 "Built target Aufgabe2_2"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+# Convenience name for target.
+Aufgabe2_2: Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+.PHONY : Aufgabe2_2
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe1_1.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=1,2 "Built target Aufgabe1_1"
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+# Convenience name for target.
+Aufgabe1_1: Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+.PHONY : Aufgabe1_1
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target Solutions/CMakeFiles/Zusatzaufgabe1_1.dir
 
 # All Build rule for target.
 Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/depend
 	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=17,18 "Built target Zusatzaufgabe1_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=21,22 "Built target Zusatzaufgabe1_1"
 .PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
 
 # Include target in all.
@@ -762,13 +877,50 @@ clean: Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe3_1.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=19,20 "Built target Aufgabe3_1"
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe3_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe3_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+# Convenience name for target.
+Aufgabe3_1: Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+.PHONY : Aufgabe3_1
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target Solutions/CMakeFiles/Zusatzaufgabe1_2.dir
 
 # All Build rule for target.
 Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/depend
 	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=19,20 "Built target Zusatzaufgabe1_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=23,24 "Built target Zusatzaufgabe1_2"
 .PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
 
 # Include target in all.
@@ -795,80 +947,6 @@ Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean:
 
 # clean rule for target.
 clean: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target Solutions/CMakeFiles/Aufgabe1_1.dir
-
-# All Build rule for target.
-Solutions/CMakeFiles/Aufgabe1_1.dir/all: CMakeFiles/cf_cg.dir/all
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/depend
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=1,2 "Built target Aufgabe1_1"
-.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/all
-
-# Include target in all.
-all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Solutions/CMakeFiles/Aufgabe1_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
-.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/rule
-
-# Convenience name for target.
-Aufgabe1_1: Solutions/CMakeFiles/Aufgabe1_1.dir/rule
-
-.PHONY : Aufgabe1_1
-
-# clean rule for target.
-Solutions/CMakeFiles/Aufgabe1_1.dir/clean:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/clean
-.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/clean
-
-# clean rule for target.
-clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target Solutions/CMakeFiles/Aufgabe2_2.dir
-
-# All Build rule for target.
-Solutions/CMakeFiles/Aufgabe2_2.dir/all: CMakeFiles/cf_cg.dir/all
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/depend
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=13,14 "Built target Aufgabe2_2"
-.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/all
-
-# Include target in all.
-all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Solutions/CMakeFiles/Aufgabe2_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
-.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/rule
-
-# Convenience name for target.
-Aufgabe2_2: Solutions/CMakeFiles/Aufgabe2_2.dir/rule
-
-.PHONY : Aufgabe2_2
-
-# clean rule for target.
-Solutions/CMakeFiles/Aufgabe2_2.dir/clean:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/clean
-.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/clean
-
-# clean rule for target.
-clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
 
 .PHONY : clean
 

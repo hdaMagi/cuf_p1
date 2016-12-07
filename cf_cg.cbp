@@ -697,6 +697,66 @@
             <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="Aufgabe2_4a">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_4a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_4a" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe2_4a/fast">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_4a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_4a/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="Aufgabe1_3">
          <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe1_3" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
@@ -812,6 +872,126 @@
          </Compiler>
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_1/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe2_2">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_2" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_2" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe2_2/fast">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_2" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_2/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe1_1">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe1_1" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe1_1" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe1_1/fast">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe1_1" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe1_1/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
@@ -1117,6 +1297,66 @@
             <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="Aufgabe3_1">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe3_1" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe3_1" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Aufgabe3_1/fast">
+         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe3_1" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DLinux" />
+            <Add option="-DOPENMP_ENABLED" />
+            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
+            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
+            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe3_1/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="Zusatzaufgabe1_2">
          <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Zusatzaufgabe1_2" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
@@ -1177,126 +1417,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="Aufgabe1_1">
-         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe1_1" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DLinux" />
-            <Add option="-DOPENMP_ENABLED" />
-            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
-            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/opencv" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe1_1" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="Aufgabe1_1/fast">
-         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe1_1" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DLinux" />
-            <Add option="-DOPENMP_ENABLED" />
-            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
-            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/opencv" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe1_1/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="Aufgabe2_2">
-         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_2" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DLinux" />
-            <Add option="-DOPENMP_ENABLED" />
-            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
-            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/opencv" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_2" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="Aufgabe2_2/fast">
-         <Option output="/home/jannis/workspace_chaos_und_fraktale/bin/Debug/Aufgabe2_2" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/jannis/workspace_chaos_und_fraktale/bin/Debug" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DLinux" />
-            <Add option="-DOPENMP_ENABLED" />
-            <Add option="-DCHAOS_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/chaos_files/&quot;" />
-            <Add option="-DGEOMETRY_FILE_PATH=&quot;/home/jannis/workspace_chaos_und_fraktale/geometry_files/&quot;" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/3rdparty/required_include" />
-            <Add directory="/home/jannis/workspace_chaos_und_fraktale/include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/opencv" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 Aufgabe2_2/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/jannis/workspace_chaos_und_fraktale/Solutions/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       </Build>
       <Unit filename="/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe1_1.cpp">
          <Option target="Aufgabe1_1"/>
@@ -1321,6 +1441,12 @@
       </Unit>
       <Unit filename="/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe2_3.cpp">
          <Option target="Aufgabe2_3"/>
+      </Unit>
+      <Unit filename="/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe2_4a.cpp">
+         <Option target="Aufgabe2_4a"/>
+      </Unit>
+      <Unit filename="/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe3_1.cpp">
+         <Option target="Aufgabe3_1"/>
       </Unit>
       <Unit filename="/home/jannis/workspace_chaos_und_fraktale/Solutions/Zusatzaufgabe1_1.cpp">
          <Option target="Zusatzaufgabe1_1"/>
