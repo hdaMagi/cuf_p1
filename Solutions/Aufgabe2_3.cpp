@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
     FrmImage2D.show();
     FrmImage2D.waitMouseInput(user.x , user.y);
     if (FrmImage2D.getColor(user.x , user.y) == cf::Color::BLUE) {
-        ifs.read(filePath+"Invers.ifs");
+        ifs.read(filePath+"P34_A2_invers.ifs");
     } else {
         ifs.read(filePath+"Invers.ifs");
     }
