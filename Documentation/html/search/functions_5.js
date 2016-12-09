@@ -7,7 +7,7 @@ var searchData=
   ['getalltransformation',['getAllTransformation',['../structcf_1_1IteratedFunctionSystem.html#ac7ac31d92aba5ae52c351f40544753cb',1,'cf::IteratedFunctionSystem']]],
   ['getaxiom',['getAxiom',['../structcf_1_1LindenmayerSystem.html#ac016b01a0d615586e8fa60b62a4a2efc',1,'cf::LindenmayerSystem']]],
   ['getcolor',['getColor',['../classcf_1_1Window2D.html#adea902af2911f31a59d24d4297ecd851',1,'cf::Window2D']]],
-  ['getcolor_5fimagespace',['getColor_imageSpace',['../structcf_1_1WindowVectorized.html#a231bf5667b56d4e4329352b19d517b2e',1,'cf::WindowVectorized']]],
+  ['getcolor_5fimagespace',['getColor_imageSpace',['../structcf_1_1WindowVectorized.html#a570e783f0040fc15b4aff58b1dd2c053',1,'cf::WindowVectorized']]],
   ['getheight',['getHeight',['../classcf_1_1Window2D.html#a65efcd0cbf1fd325fa7f91b9658cc0fd',1,'cf::Window2D']]],
   ['getimage',['getImage',['../classcf_1_1Window2D.html#ad1ba7cd40d466759a270b3adfcb8c6d9',1,'cf::Window2D']]],
   ['getintervalx',['getIntervalX',['../classcf_1_1Window2D.html#a555779d4c8ba4fa10a2cc4e78c020227',1,'cf::Window2D']]],

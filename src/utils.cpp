@@ -2,6 +2,7 @@
 
 #include "utils.h"
 #include <iomanip>
+#include <random>
 #include <opencv2/opencv.hpp>
 
 typedef unsigned int uint; // may not be defined (for example on windows)
@@ -143,6 +144,10 @@ std::string Direction::toString(RelativeDirection relDir){
 }
 
 
+float Interval::translateIntervalPostion(const Interval &newInterval, float originalPosition) const {
+    return Interval::translateIntervalPostion(*this, newInterval, originalPosition);
+}
+
 float Interval::translateIntervalPostion(const Interval& originalInterval, const Interval& newInterval, float originalPosition){
     float factor = (newInterval.max - newInterval.min) / (originalInterval.max - originalInterval.min);
     originalPosition -= originalInterval.min;
@@ -151,45 +156,59 @@ float Interval::translateIntervalPostion(const Interval& originalInterval, const
 }
 
 
-bool Color::operator==(const Color& c){
-    if (this->r == c.r && this->g == c.g && this->b == c.b)
-        return true;
-    return false;
+bool Color::operator< (const Color& c) const{
+    static_assert(sizeof(c.r) + sizeof(c.g) + sizeof(c.b) <= sizeof(int),
+                  "Error: color2integer function generates undefined behavior!");
+
+    auto color2integer = [](const Color& color) -> int {
+        return (int(color.r) << (sizeof(color.r) * 8 * 2)) +
+               (int(color.g) << (sizeof(color.g) * 8 * 1)) +
+               (int(color.b) << (sizeof(color.b) * 8 * 0));
+    };
+    return color2integer(*this) < color2integer(c);
+}
+bool Color::operator==(const Color& c) const{
+    return this->r == c.r && this->g == c.g && this->b == c.b;
 }
 
-bool Color::operator!=(const Color& c){
-    return !(*this == c);
-}
+bool Color::operator> (const Color& c) const{ return c < *this; }
+bool Color::operator!=(const Color& c) const{ return !(*this == c); }
+bool Color::operator<=(const Color& c) const{ return !(*this >  c); }
+bool Color::operator>=(const Color& c) const{ return !(*this <  c); }
 
 Color Color::invert() const{
-    Color toReturn = cf::Color::WHITE;
-    toReturn -= *this;
-    return toReturn;
+    return cf::Color::WHITE - (*this);
+}
+
+Color Color::RandomColor() {
+    static std::mt19937 gen = std::mt19937((std::random_device()).operator ()());
+    static std::uniform_int_distribution<int> dis = std::uniform_int_distribution<int>(0, 255);
+    return { uint8_t(dis(gen)), uint8_t(dis(gen)), uint8_t(dis(gen)) };
 }
 
 
-std::ostream& operator<<(std::ostream &os, const Color& c){
+std::ostream& operator<<(std::ostream &os, const Color& c) {
     os << "Red: " << int(c.r) << "   Green: " << int(c.g) << "   Blue: " << int(c.b);
     return os;
 }
 
-Color  Color::operator* (float value){
+Color  Color::operator* (float value) const{
     Color tmp = *this;
     tmp *= value;
     return tmp;
 }
-Color  Color::operator/ (float value){
+Color  Color::operator/ (float value) const{
     Color tmp = *this;
     tmp /= value;
     return tmp;
 }
 
-Color  Color::operator+ (const Color& c){
+Color  Color::operator+ (const Color& c) const{
     Color toReturn = *this;
     toReturn += c;
     return toReturn;
 }
-Color  Color::operator- (const Color& c){
+Color  Color::operator- (const Color& c) const{
     Color toReturn = *this;
     toReturn -= c;
     return toReturn;

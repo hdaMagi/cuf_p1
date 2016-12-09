@@ -39,16 +39,19 @@ Window3D::~Window3D(){
 }
 
 void Window3D::printWindowUsage(){
-    std::cout << "Close window:\n"
-              << "esc-key\n\n"
-              << "Camera usage:\n"
-              << "a/d: camera movement left/right\n"
-              << "w/s: camera movement up/down\n"
-              << "f/r: move camera closer/further away\n\n"
-              << "Rotation-Type specific movements:\n"
-              << "q/e: rotation y-axis\n"
-              << "y/c: rotation x-axis\n"
-              << std::endl;
+    std::cout
+#ifndef __APPLE__
+        << "Close window:\n"
+        << "esc-key\n\n"
+#endif
+        << "Camera usage:\n"
+        << "a/d: camera movement left/right\n"
+        << "w/s: camera movement up/down\n"
+        << "f/r: move camera closer/further away\n\n"
+        << "Rotation-Type specific movements:\n"
+        << "q/e: rotation y-axis\n"
+        << "y/c: rotation x-axis\n"
+        << std::endl;
 }
 
 
@@ -57,7 +60,7 @@ void _DrawingFunction(){
     if (!windowPtr)
         throw std::runtime_error("Error: window ptr not set!");
 
-    static const GLfloat position[] = { -10.f, 10.0f, -10.0f, 0.0f };
+    static const GLfloat position[] = { -5.f, 15.0f, 10.0f, 0.0f };
     glLightfv(GL_LIGHT0, GL_POSITION, position);
 
     windowPtr->draw();
@@ -203,10 +206,11 @@ int Window3D::startDrawing(){
 
     // enable light 0
     // this only works if 'GL_LIGHTING' is enabled (default)
-    glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHTING);
 
-    glColorMaterial(GL_FRONT_AND_BACK, GL_EMISSION);
-    glEnable(GL_COLOR_MATERIAL);
+    //glColorMaterial(GL_FRONT_AND_BACK, GL_EMISSION);
+	glEnable(GL_COLOR_MATERIAL);
 
     // enable z buffer
     glEnable(GL_DEPTH_TEST);
@@ -216,7 +220,6 @@ int Window3D::startDrawing(){
     glEnable(GL_DEPTH_TEST);
     glDepthMask(GL_TRUE);
 
-    this->clear();
     glutMainLoop();
     return 0; // never reached
 }
@@ -249,11 +252,11 @@ void Window3D::drawCylinder(const glm::vec3& drawingDirection, const glm::vec3& 
 #ifndef __APPLE__
         glutSolidCylinder(1.f, glm::length(drawingDirection) / diameter, 10, 10);
 #else
-        glScalef(1.f, 1.f, glm::length(drawingDirection) / diameter);
-        glTranslatef(0.f, 0.f, 0.5f);
-        glutSolidCube(1.f);
-        glRotatef(45.f, 0.f, 0.f, 1.f);
-        glutSolidCube(1.f);
+		glScalef(1.f, 1.f, glm::length(drawingDirection) / diameter);
+		glTranslatef(0.f, 0.f, 0.5f);
+		glutSolidCube(1.f);
+		glRotatef(45.f, 0.f, 0.f, 1.f);
+		glutSolidCube(1.f);
 #endif
     }
     glPopMatrix();
@@ -272,6 +275,35 @@ void Window3D::drawCylinder(const glm::vec3& drawingDirection, const glm::vec4& 
     glm::vec3 pos = {position.x, position.y, position.z};
     this->drawCylinder(drawingDirection, pos, diameter, color);
 }
+
+
+// Groch
+void Window3D::drawSphere(const glm::vec3& position, float diameter, const Color& color) const {
+
+	glPushMatrix();
+	{
+		glColor3f(float(color.r) / 255.f, float(color.g) / 255.f, float(color.b) / 255.f);
+		glTranslatef(position.x, position.y, position.z);
+		glScalef(diameter, diameter, diameter);
+		glutSolidSphere(1.f, 10, 10);
+	}
+	glPopMatrix();
+}
+
+
+// Groch
+void Window3D::drawCube(const glm::vec3& position, float size, const Color& color) const {
+
+	glPushMatrix();
+	{
+		glColor3f(float(color.r) / 255.f, float(color.g) / 255.f, float(color.b) / 255.f);
+		glTranslatef(position.x, position.y, position.z);
+		glScalef(size, size, size);
+		glutSolidCube(1.f);
+	}
+	glPopMatrix();
+}
+
 
 void Window3D::_AdjustCamera(){
     glLoadIdentity();             // Reset

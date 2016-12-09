@@ -75,7 +75,7 @@ $(function() {
 <p>The <a class="el" href="structcf_1_1WindowVectorized.html" title="The WindowVectorized struct Default class for images and raster operations. ">WindowVectorized</a> struct Default class for images and raster operations.  
  <a href="structcf_1_1WindowVectorized.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="windowVercorized_8hpp_source.html">windowVercorized.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="windowVectorized_8hpp_source.html">windowVectorized.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for cf::WindowVectorized:</div>
 <div class="dyncontent">
@@ -117,12 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a737a747d6d342f848ab69c1cf9f1a3e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcf_1_1WindowVectorized.html#a737a747d6d342f848ab69c1cf9f1a3e3">convert_intervalLength_to_pixelLength</a> (float intervalLength) const</td></tr>
 <tr class="memdesc:a737a747d6d342f848ab69c1cf9f1a3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert_intervalLength_to_pixelLength Converts length from interval to pixel  <a href="#a737a747d6d342f848ab69c1cf9f1a3e3">More...</a><br /></td></tr>
 <tr class="separator:a737a747d6d342f848ab69c1cf9f1a3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231bf5667b56d4e4329352b19d517b2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcf_1_1Color.html">cf::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcf_1_1WindowVectorized.html#a231bf5667b56d4e4329352b19d517b2e">getColor_imageSpace</a> (int i, int j) const</td></tr>
-<tr class="memdesc:a231bf5667b56d4e4329352b19d517b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getColor_imageSpace Get color from image i/j position  <a href="#a231bf5667b56d4e4329352b19d517b2e">More...</a><br /></td></tr>
-<tr class="separator:a231bf5667b56d4e4329352b19d517b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac309b8f56317fd7c5db6e3f19f94a236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcf_1_1WindowVectorized.html#ac309b8f56317fd7c5db6e3f19f94a236">setColor_imageSpace</a> (int i, int j, const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color)</td></tr>
-<tr class="memdesc:ac309b8f56317fd7c5db6e3f19f94a236"><td class="mdescLeft">&#160;</td><td class="mdescRight">setColor_imageSpace Set color from image i/j position  <a href="#ac309b8f56317fd7c5db6e3f19f94a236">More...</a><br /></td></tr>
-<tr class="separator:ac309b8f56317fd7c5db6e3f19f94a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570e783f0040fc15b4aff58b1dd2c053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcf_1_1Color.html">cf::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcf_1_1WindowVectorized.html#a570e783f0040fc15b4aff58b1dd2c053">getColor_imageSpace</a> (int x, int y) const</td></tr>
+<tr class="memdesc:a570e783f0040fc15b4aff58b1dd2c053"><td class="mdescLeft">&#160;</td><td class="mdescRight">getColor_imageSpace Get color from image x/y position  <a href="#a570e783f0040fc15b4aff58b1dd2c053">More...</a><br /></td></tr>
+<tr class="separator:a570e783f0040fc15b4aff58b1dd2c053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1542e730e19d45314c44a49e8c4cbee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcf_1_1WindowVectorized.html#ae1542e730e19d45314c44a49e8c4cbee">setColor_imageSpace</a> (int x, int y, const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color)</td></tr>
+<tr class="memdesc:ae1542e730e19d45314c44a49e8c4cbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">setColor_imageSpace Set color from image x/y position  <a href="#ae1542e730e19d45314c44a49e8c4cbee">More...</a><br /></td></tr>
+<tr class="separator:ae1542e730e19d45314c44a49e8c4cbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -232,12 +232,27 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8a0c8cbc029dabd13f9b9ad02d8d3de4 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a8a0c8cbc029dabd13f9b9ad02d8d3de4">drawAxis</a> (const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color=<a class="el" href="structcf_1_1Color.html#a609a92ce80fae71f29a4406e10a076e5">cf::Color::BLACK</a>, float stepSize_x=1.f, float stepSize_y=1.f, float interceptLength=3.f)</td></tr>
 <tr class="memdesc:a8a0c8cbc029dabd13f9b9ad02d8d3de4 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawAxis This function draws x and y axis based on <a class="el" href="structcf_1_1Interval.html" title="The Interval struct provides functionallity to translate values from one interval into another...">Interval</a>  <a href="classcf_1_1Window2D.html#a8a0c8cbc029dabd13f9b9ad02d8d3de4">More...</a><br /></td></tr>
 <tr class="separator:a8a0c8cbc029dabd13f9b9ad02d8d3de4 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cea2e7d4dd992c59ad491e9fcdcff47 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a1cea2e7d4dd992c59ad491e9fcdcff47">drawCriclePart</a> (<a class="el" href="structcf_1_1Point.html">cf::Point</a> center, int radius, float startAngle, float endAngle, int lineWidth, const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color=<a class="el" href="structcf_1_1Color.html#a609a92ce80fae71f29a4406e10a076e5">cf::Color::BLACK</a>)</td></tr>
-<tr class="memdesc:a1cea2e7d4dd992c59ad491e9fcdcff47 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawCriclePart Draws a part of a circle  <a href="classcf_1_1Window2D.html#a1cea2e7d4dd992c59ad491e9fcdcff47">More...</a><br /></td></tr>
-<tr class="separator:a1cea2e7d4dd992c59ad491e9fcdcff47 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab846e5753ad9e5b0935f5abc8dfddf34 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#ab846e5753ad9e5b0935f5abc8dfddf34">drawCirclePart</a> (<a class="el" href="structcf_1_1Point.html">cf::Point</a> center, int radius, float startAngle, float endAngle, int lineWidth, const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color)</td></tr>
+<tr class="memdesc:ab846e5753ad9e5b0935f5abc8dfddf34 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawCirclePart Draws a part of a circle  <a href="classcf_1_1Window2D.html#ab846e5753ad9e5b0935f5abc8dfddf34">More...</a><br /></td></tr>
+<tr class="separator:ab846e5753ad9e5b0935f5abc8dfddf34 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fdae15cafb3f1369c15daea3968fa7 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a37fdae15cafb3f1369c15daea3968fa7">floodFill</a> (<a class="el" href="structcf_1_1Point.html">cf::Point</a> startingPoint, const <a class="el" href="structcf_1_1Color.html">cf::Color</a> &amp;color)</td></tr>
 <tr class="memdesc:a37fdae15cafb3f1369c15daea3968fa7 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">floodFill Fills an area  <a href="classcf_1_1Window2D.html#a37fdae15cafb3f1369c15daea3968fa7">More...</a><br /></td></tr>
 <tr class="separator:a37fdae15cafb3f1369c15daea3968fa7 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91ed7cb3a0d2e1e96142b509a48b1b9 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#ae91ed7cb3a0d2e1e96142b509a48b1b9">drawLine</a> (const <a class="el" href="structcf_1_1Line.html">cf::Line</a> &amp;line)</td></tr>
+<tr class="memdesc:ae91ed7cb3a0d2e1e96142b509a48b1b9 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawLine Draws a line from line class  <a href="classcf_1_1Window2D.html#ae91ed7cb3a0d2e1e96142b509a48b1b9">More...</a><br /></td></tr>
+<tr class="separator:ae91ed7cb3a0d2e1e96142b509a48b1b9 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209f98e7e4855ac82770c2d030fc289a inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a209f98e7e4855ac82770c2d030fc289a">drawRectangle</a> (const <a class="el" href="structcf_1_1Rect.html">cf::Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a209f98e7e4855ac82770c2d030fc289a inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawRectangle Draws a rect from rect class  <a href="classcf_1_1Window2D.html#a209f98e7e4855ac82770c2d030fc289a">More...</a><br /></td></tr>
+<tr class="separator:a209f98e7e4855ac82770c2d030fc289a inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6124d208fa7ac3caf946fc197a0b7575 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a6124d208fa7ac3caf946fc197a0b7575">drawCircle</a> (const <a class="el" href="structcf_1_1Circle.html">cf::Circle</a> &amp;circle)</td></tr>
+<tr class="memdesc:a6124d208fa7ac3caf946fc197a0b7575 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawCircle Draws a circle from circle class  <a href="classcf_1_1Window2D.html#a6124d208fa7ac3caf946fc197a0b7575">More...</a><br /></td></tr>
+<tr class="separator:a6124d208fa7ac3caf946fc197a0b7575 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4c09d429802c64f398020145904046 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a6f4c09d429802c64f398020145904046">drawCirclePart</a> (const <a class="el" href="structcf_1_1CirclePartition.html">cf::CirclePartition</a> &amp;circlePartition)</td></tr>
+<tr class="memdesc:a6f4c09d429802c64f398020145904046 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawCirclePart Draws a circlePartition from circlePartition class  <a href="classcf_1_1Window2D.html#a6f4c09d429802c64f398020145904046">More...</a><br /></td></tr>
+<tr class="separator:a6f4c09d429802c64f398020145904046 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c72480f81512351f32a40990d0bb4d1 inherit pro_methods_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcf_1_1Window2D.html">Window2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a5c72480f81512351f32a40990d0bb4d1">operator=</a> (const <a class="el" href="classcf_1_1Window2D.html">Window2D</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a5c72480f81512351f32a40990d0bb4d1 inherit pro_methods_classcf_1_1Window2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator= Copy assigment operator  <a href="classcf_1_1Window2D.html#a5c72480f81512351f32a40990d0bb4d1">More...</a><br /></td></tr>
+<tr class="separator:a5c72480f81512351f32a40990d0bb4d1 inherit pro_methods_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcf_1_1Window2D"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcf_1_1Window2D')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcf_1_1Window2D.html">cf::Window2D</a></td></tr>
 <tr class="memitem:a53fd5a912a3bec7a2cf294fb8e260bc8 inherit pro_attribs_classcf_1_1Window2D"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcf_1_1Window2D.html#a53fd5a912a3bec7a2cf294fb8e260bc8">m_Image</a></td></tr>
 <tr class="separator:a53fd5a912a3bec7a2cf294fb8e260bc8 inherit pro_attribs_classcf_1_1Window2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,8 +520,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a231bf5667b56d4e4329352b19d517b2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231bf5667b56d4e4329352b19d517b2e">&sect;&nbsp;</a></span>getColor_imageSpace()</h2>
+<a id="a570e783f0040fc15b4aff58b1dd2c053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a570e783f0040fc15b4aff58b1dd2c053">&sect;&nbsp;</a></span>getColor_imageSpace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,13 +533,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="structcf_1_1Color.html">cf::Color</a> cf::WindowVectorized::getColor_imageSpace </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -539,11 +554,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>getColor_imageSpace Get color from image i/j position </p>
+<p>getColor_imageSpace Get color from image x/y position </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>I position </td></tr>
-    <tr><td class="paramname">j</td><td>J position </td></tr>
+    <tr><td class="paramname">x</td><td>X position </td></tr>
+    <tr><td class="paramname">y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,8 +566,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac309b8f56317fd7c5db6e3f19f94a236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac309b8f56317fd7c5db6e3f19f94a236">&sect;&nbsp;</a></span>setColor_imageSpace()</h2>
+<a id="ae1542e730e19d45314c44a49e8c4cbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1542e730e19d45314c44a49e8c4cbee">&sect;&nbsp;</a></span>setColor_imageSpace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,13 +579,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void cf::WindowVectorized::setColor_imageSpace </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
+          <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -591,11 +606,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>setColor_imageSpace Set color from image i/j position </p>
+<p>setColor_imageSpace Set color from image x/y position </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>I position </td></tr>
-    <tr><td class="paramname">j</td><td>J position </td></tr>
+    <tr><td class="paramname">x</td><td>X position </td></tr>
+    <tr><td class="paramname">y</td><td>Y position </td></tr>
     <tr><td class="paramname">color</td><td><a class="el" href="structcf_1_1Color.html" title="The Color struct offers a class for rgb access. ">Color</a> to be set </td></tr>
   </table>
   </dd>
@@ -726,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="windowVercorized_8hpp_source.html">windowVercorized.hpp</a></li>
+<li>include/<a class="el" href="windowVectorized_8hpp_source.html">windowVectorized.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

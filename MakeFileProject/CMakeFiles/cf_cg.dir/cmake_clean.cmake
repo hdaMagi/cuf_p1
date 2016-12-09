@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cf_cg.dir/src/window3D.cpp.o"
+  "CMakeFiles/cf_cg.dir/src/bigInt.cpp.o"
   "CMakeFiles/cf_cg.dir/src/IFS.cpp.o"
   "CMakeFiles/cf_cg.dir/src/utils.cpp.o"
   "CMakeFiles/cf_cg.dir/src/ORB.cpp.o"

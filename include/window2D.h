@@ -7,6 +7,10 @@
 
 namespace cf{
 struct Point;
+struct Line;
+struct Rect;
+struct Circle;
+struct CirclePartition;
 
 /**
  * @brief The Window2D struct offers advanced features used by WindowRasterized/WindowVertorized
@@ -172,14 +176,14 @@ public:
     void drawAxis(const cf::Color& color = cf::Color::BLACK, float stepSize_x = 1.f, float stepSize_y = 1.f, float interceptLength = 3.f);
 
     /**
-     * @brief drawCriclePart Draws a part of a circle
+     * @brief drawCirclePart Draws a part of a circle
      * @param center Center point of the circle
      * @param radius Radius of the circle
      * @param startAngle Start position (in degrees)
      * @param endAngle End position (in degrees)
      * @param color Color of the drawn line
      */
-    void drawCriclePart(cf::Point center, int radius, float startAngle, float endAngle, int lineWidth, const cf::Color& color = cf::Color::BLACK);
+    void drawCirclePart(cf::Point center, int radius, float startAngle, float endAngle, int lineWidth, const cf::Color& color);
 
     /**
      * @brief floodFill Fills an area
@@ -187,6 +191,38 @@ public:
      * @param color Fill color
      */
     void floodFill(cf::Point startingPoint, const cf::Color& color);
+
+
+    /**
+     * @brief drawLine Draws a line from line class
+     * @param line
+     */
+    void drawLine(const cf::Line& line);
+
+    /**
+     * @brief drawRectangle Draws a rect from rect class
+     * @param rect
+     */
+    void drawRectangle(const cf::Rect& rect);
+
+    /**
+     * @brief drawCircle Draws a circle from circle class
+     * @param circle
+     */
+    void drawCircle(const cf::Circle& circle);
+
+    /**
+     * @brief drawCirclePart  Draws a circlePartition from circlePartition class
+     * @param circlePartition
+     */
+    void drawCirclePart(const cf::CirclePartition& circlePartition);
+
+    /**
+     * @brief operator= Copy assigment operator
+     * @param rhs Element to be copied
+     * @return
+     */
+    Window2D& operator=(const Window2D& rhs);
 
 protected:
     void _correctYValue(float& y) const;
@@ -211,7 +247,7 @@ protected:
 };
 
 
-// Note: cv::Point only alows int positions NOT floatingpoint
+// Note: cv::Point only allows int positions NOT floatingpoint
 /**
  * @brief The Point struct is a simple class for positon access on 2D images (imilar to cv::Point, but uses floats instead of integer)
  */
@@ -240,6 +276,60 @@ struct Point{
     friend Point operator*(float lhs, const Point& p);
     friend Point operator/(float lhs, const Point& p);
 };
+
+
+/**
+ * @brief The Line struct Simple parameter wrapper struct
+ */
+struct Line{
+    Line(cf::Point Point1, cf::Point Point2, int LineWidth, const cf::Color& Color, cf::Window2D::LineType LineType = cf::Window2D::LineType::DEFAULT)
+        : point1(Point1), point2(Point2), lineWidth(LineWidth), color(Color), lineType(LineType){}
+
+    cf::Point point1;
+    cf::Point point2;
+    int lineWidth;
+    cf::Color color;
+    cf::Window2D::LineType lineType;
+};
+/**
+ * @brief The Rect struct Simple parameter wrapper struct
+ */
+struct Rect{
+    Rect(cf::Point Point1, cf::Point Point2, int LineWidth, const cf::Color& Color)
+        : point1(Point1), point2(Point2), lineWidth(LineWidth), color(Color){}
+
+    cf::Point point1;
+    cf::Point point2;
+    int lineWidth;
+    cf::Color color;
+};
+/**
+ * @brief The Circle struct Simple parameter wrapper struct
+ */
+struct Circle{
+    Circle(const cf::Point& Center, int Radius, int LineWidth, const cf::Color& Color)
+        : center(Center), radius(Radius), lineWidth(LineWidth), color(Color) {}
+
+    cf::Point center;
+    int radius;
+    int lineWidth;
+    cf::Color color;
+};
+/**
+ * @brief The CirclePartition struct Simple parameter wrapper struct
+ */
+struct CirclePartition{
+    CirclePartition(cf::Point Center, int Radius, float StartAngle, float EndAngle, int LineWidth, const cf::Color& Color)
+        : center(Center), radius(Radius), startAngle(StartAngle), endAngle(EndAngle), lineWidth(LineWidth), color(Color){}
+
+    cf::Point center;
+    int radius;
+    float startAngle;
+    float endAngle;
+    int lineWidth;
+    cf::Color color;
+};
+
 
 }
 

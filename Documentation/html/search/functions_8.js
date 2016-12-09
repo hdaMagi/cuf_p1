@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normalize',['normalize',['../structcf_1_1Vec3.html#ac2cf27ffbe8f9329a48240785589e584',1,'cf::Vec3']]]
+  ['line',['Line',['../structcf_1_1Line.html#adefb90a1edc0f6acadf44b308b917c9b',1,'cf::Line']]]
 ];

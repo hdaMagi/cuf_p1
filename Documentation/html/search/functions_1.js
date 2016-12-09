@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['clear',['clear',['../classcf_1_1Window2D.html#ae4a6b028cac593811a30bc986ec23935',1,'cf::Window2D::clear()'],['../structcf_1_1Window3D.html#a167c415ab9650221d0e809cd5de6aaf5',1,'cf::Window3D::clear()']]],
+  ['circle',['Circle',['../structcf_1_1Circle.html#ae783ef619b0ce68b60472c325dfe8f7d',1,'cf::Circle']]],
+  ['circlepartition',['CirclePartition',['../structcf_1_1CirclePartition.html#aa7a67e65449b246b051ea3c58d32e69b',1,'cf::CirclePartition']]],
+  ['clear',['clear',['../classcf_1_1Window2D.html#ae4a6b028cac593811a30bc986ec23935',1,'cf::Window2D::clear()'],['../structcf_1_1Window3D.html#a1ac2e058847c0162c25d93330038113a',1,'cf::Window3D::clear()']]],
   ['clearconsole',['clearConsole',['../structcf_1_1Console.html#a145ab537ca36b198a139fd51ea58aff1',1,'cf::Console']]],
   ['clearwindoweachtime',['clearWindowEachTime',['../structcf_1_1LindenmayerSystem.html#a32dacf4ac1fca1ceb516f9317eeec8bd',1,'cf::LindenmayerSystem']]],
   ['color',['Color',['../structcf_1_1Color.html#a66f286abb35e865fce74af45a5bb89bc',1,'cf::Color']]],

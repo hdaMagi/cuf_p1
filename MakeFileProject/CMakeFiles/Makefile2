@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum
 CMAKE_BINARY_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject
 
 #=============================================================================
+# Target rules for target CMakeFiles/lin_example.dir
+
+# All Build rule for target.
+CMakeFiles/lin_example.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/depend
+	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=39,40 "Built target lin_example"
+.PHONY : CMakeFiles/lin_example.dir/all
+
+# Include target in all.
+all: CMakeFiles/lin_example.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lin_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lin_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : CMakeFiles/lin_example.dir/rule
+
+# Convenience name for target.
+lin_example: CMakeFiles/lin_example.dir/rule
+
+.PHONY : lin_example
+
+# clean rule for target.
+CMakeFiles/lin_example.dir/clean:
+	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/clean
+.PHONY : CMakeFiles/lin_example.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lin_example.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ifs_example.dir
 
 # All Build rule for target.
 CMakeFiles/ifs_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/ifs_example.dir/build.make CMakeFiles/ifs_example.dir/depend
 	$(MAKE) -f CMakeFiles/ifs_example.dir/build.make CMakeFiles/ifs_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=10,11 "Built target ifs_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=35,36 "Built target ifs_example"
 .PHONY : CMakeFiles/ifs_example.dir/all
 
 # Include target in all.
@@ -76,7 +113,7 @@ all: CMakeFiles/ifs_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ifs_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ifs_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/ifs_example.dir/rule
@@ -103,7 +140,7 @@ clean: CMakeFiles/ifs_example.dir/clean
 CMakeFiles/small_examples.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/small_examples.dir/build.make CMakeFiles/small_examples.dir/depend
 	$(MAKE) -f CMakeFiles/small_examples.dir/build.make CMakeFiles/small_examples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=18,19 "Built target small_examples"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=43,44 "Built target small_examples"
 .PHONY : CMakeFiles/small_examples.dir/all
 
 # Include target in all.
@@ -113,7 +150,7 @@ all: CMakeFiles/small_examples.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/small_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/small_examples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/small_examples.dir/rule
@@ -134,13 +171,50 @@ clean: CMakeFiles/small_examples.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/terrainGenerator_example.dir
+
+# All Build rule for target.
+CMakeFiles/terrainGenerator_example.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f CMakeFiles/terrainGenerator_example.dir/build.make CMakeFiles/terrainGenerator_example.dir/depend
+	$(MAKE) -f CMakeFiles/terrainGenerator_example.dir/build.make CMakeFiles/terrainGenerator_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=47,48 "Built target terrainGenerator_example"
+.PHONY : CMakeFiles/terrainGenerator_example.dir/all
+
+# Include target in all.
+all: CMakeFiles/terrainGenerator_example.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/terrainGenerator_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/terrainGenerator_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : CMakeFiles/terrainGenerator_example.dir/rule
+
+# Convenience name for target.
+terrainGenerator_example: CMakeFiles/terrainGenerator_example.dir/rule
+
+.PHONY : terrainGenerator_example
+
+# clean rule for target.
+CMakeFiles/terrainGenerator_example.dir/clean:
+	$(MAKE) -f CMakeFiles/terrainGenerator_example.dir/build.make CMakeFiles/terrainGenerator_example.dir/clean
+.PHONY : CMakeFiles/terrainGenerator_example.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/terrainGenerator_example.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/orb_example.dir
 
 # All Build rule for target.
 CMakeFiles/orb_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/depend
 	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=16,17 "Built target orb_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=41,42 "Built target orb_example"
 .PHONY : CMakeFiles/orb_example.dir/all
 
 # Include target in all.
@@ -150,7 +224,7 @@ all: CMakeFiles/orb_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/orb_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/orb_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/orb_example.dir/rule
@@ -177,7 +251,7 @@ clean: CMakeFiles/orb_example.dir/clean
 CMakeFiles/image_operations_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/depend
 	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=12,13 "Built target image_operations_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=37,38 "Built target image_operations_example"
 .PHONY : CMakeFiles/image_operations_example.dir/all
 
 # Include target in all.
@@ -187,7 +261,7 @@ all: CMakeFiles/image_operations_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_operations_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image_operations_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/image_operations_example.dir/rule
@@ -214,7 +288,7 @@ clean: CMakeFiles/image_operations_example.dir/clean
 CMakeFiles/cf_cg.dir/all:
 	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/depend
 	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target cf_cg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target cf_cg"
 .PHONY : CMakeFiles/cf_cg.dir/all
 
 # Include target in all.
@@ -224,7 +298,7 @@ all: CMakeFiles/cf_cg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cf_cg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cf_cg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/cf_cg.dir/rule
@@ -251,7 +325,7 @@ clean: CMakeFiles/cf_cg.dir/clean
 CMakeFiles/terrain.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/depend
 	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=20,21 "Built target terrain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=45,46 "Built target terrain"
 .PHONY : CMakeFiles/terrain.dir/all
 
 # Include target in all.
@@ -261,7 +335,7 @@ all: CMakeFiles/terrain.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/terrain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/terrain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/terrain.dir/rule
@@ -288,7 +362,7 @@ clean: CMakeFiles/terrain.dir/clean
 CMakeFiles/computerGeometry_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/depend
 	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=8,9 "Built target computerGeometry_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=33,34 "Built target computerGeometry_example"
 .PHONY : CMakeFiles/computerGeometry_example.dir/all
 
 # Include target in all.
@@ -298,7 +372,7 @@ all: CMakeFiles/computerGeometry_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/computerGeometry_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/computerGeometry_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/computerGeometry_example.dir/rule
@@ -325,7 +399,7 @@ clean: CMakeFiles/computerGeometry_example.dir/clean
 CMakeFiles/windowVectorized_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/depend
 	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=26,27 "Built target windowVectorized_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=51,52 "Built target windowVectorized_example"
 .PHONY : CMakeFiles/windowVectorized_example.dir/all
 
 # Include target in all.
@@ -335,7 +409,7 @@ all: CMakeFiles/windowVectorized_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/windowVectorized_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/windowVectorized_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/windowVectorized_example.dir/rule
@@ -356,50 +430,13 @@ clean: CMakeFiles/windowVectorized_example.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lin_example.dir
-
-# All Build rule for target.
-CMakeFiles/lin_example.dir/all: CMakeFiles/cf_cg.dir/all
-	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/depend
-	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=14,15 "Built target lin_example"
-.PHONY : CMakeFiles/lin_example.dir/all
-
-# Include target in all.
-all: CMakeFiles/lin_example.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lin_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lin_example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
-.PHONY : CMakeFiles/lin_example.dir/rule
-
-# Convenience name for target.
-lin_example: CMakeFiles/lin_example.dir/rule
-
-.PHONY : lin_example
-
-# clean rule for target.
-CMakeFiles/lin_example.dir/clean:
-	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/clean
-.PHONY : CMakeFiles/lin_example.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lin_example.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/window_3D_example.dir
 
 # All Build rule for target.
 CMakeFiles/window_3D_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/depend
 	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=28,29 "Built target window_3D_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=53,54 "Built target window_3D_example"
 .PHONY : CMakeFiles/window_3D_example.dir/all
 
 # Include target in all.
@@ -409,7 +446,7 @@ all: CMakeFiles/window_3D_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/window_3D_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/window_3D_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/window_3D_example.dir/rule
@@ -436,7 +473,7 @@ clean: CMakeFiles/window_3D_example.dir/clean
 CMakeFiles/windowRasterized_example.dir/all: CMakeFiles/cf_cg.dir/all
 	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/depend
 	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=24,25 "Built target windowRasterized_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=49,50 "Built target windowRasterized_example"
 .PHONY : CMakeFiles/windowRasterized_example.dir/all
 
 # Include target in all.
@@ -446,7 +483,7 @@ all: CMakeFiles/windowRasterized_example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/windowRasterized_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/windowRasterized_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
 .PHONY : CMakeFiles/windowRasterized_example.dir/rule
@@ -470,12 +507,34 @@ clean: CMakeFiles/windowRasterized_example.dir/clean
 # Directory level rules for directory Solutions
 
 # Convenience name for "all" pass in the directory.
-Solutions/all: Solutions/CMakeFiles/whatever.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_1.dir/all
+Solutions/all: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe1_2.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe1_4.dir/all
+Solutions/all: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_3.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_1b.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe3_1.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
+Solutions/all: Solutions/CMakeFiles/Aufgabe1_3.dir/all
 
 .PHONY : Solutions/all
 
 # Convenience name for "clean" pass in the directory.
-Solutions/clean: Solutions/CMakeFiles/whatever.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_1.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe1_2.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe1_4.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_3.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+Solutions/clean: Solutions/CMakeFiles/Aufgabe1_3.dir/clean
 
 .PHONY : Solutions/clean
 
@@ -485,39 +544,446 @@ Solutions/preinstall:
 .PHONY : Solutions/preinstall
 
 #=============================================================================
-# Target rules for target Solutions/CMakeFiles/whatever.dir
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_1.dir
 
 # All Build rule for target.
-Solutions/CMakeFiles/whatever.dir/all: CMakeFiles/cf_cg.dir/all
-	$(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/depend
-	$(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=22,23 "Built target whatever"
-.PHONY : Solutions/CMakeFiles/whatever.dir/all
+Solutions/CMakeFiles/Aufgabe2_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=9,10 "Built target Aufgabe2_1"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/all
 
 # Include target in all.
-all: Solutions/CMakeFiles/whatever.dir/all
+all: Solutions/CMakeFiles/Aufgabe2_1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Solutions/CMakeFiles/whatever.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/whatever.dir/all
+Solutions/CMakeFiles/Aufgabe2_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
-.PHONY : Solutions/CMakeFiles/whatever.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/rule
 
 # Convenience name for target.
-whatever: Solutions/CMakeFiles/whatever.dir/rule
+Aufgabe2_1: Solutions/CMakeFiles/Aufgabe2_1.dir/rule
 
-.PHONY : whatever
-
-# clean rule for target.
-Solutions/CMakeFiles/whatever.dir/clean:
-	$(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/clean
-.PHONY : Solutions/CMakeFiles/whatever.dir/clean
+.PHONY : Aufgabe2_1
 
 # clean rule for target.
-clean: Solutions/CMakeFiles/whatever.dir/clean
+Solutions/CMakeFiles/Aufgabe2_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Zusatzaufgabe1_2.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=23,24 "Built target Zusatzaufgabe1_2"
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule
+
+# Convenience name for target.
+Zusatzaufgabe1_2: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule
+
+.PHONY : Zusatzaufgabe1_2
+
+# clean rule for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe1_2.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe1_2.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=3,4 "Built target Aufgabe1_2"
+.PHONY : Solutions/CMakeFiles/Aufgabe1_2.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe1_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe1_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe1_2.dir/rule
+
+# Convenience name for target.
+Aufgabe1_2: Solutions/CMakeFiles/Aufgabe1_2.dir/rule
+
+.PHONY : Aufgabe1_2
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe1_2.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe1_2.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe1_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe1_4.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe1_4.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=7,8 "Built target Aufgabe1_4"
+.PHONY : Solutions/CMakeFiles/Aufgabe1_4.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe1_4.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe1_4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe1_4.dir/rule
+
+# Convenience name for target.
+Aufgabe1_4: Solutions/CMakeFiles/Aufgabe1_4.dir/rule
+
+.PHONY : Aufgabe1_4
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe1_4.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe1_4.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe1_4.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Zusatzaufgabe1_1.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=21,22 "Built target Zusatzaufgabe1_1"
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule
+
+# Convenience name for target.
+Zusatzaufgabe1_1: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule
+
+.PHONY : Zusatzaufgabe1_1
+
+# clean rule for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_3.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_3.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=15,16 "Built target Aufgabe2_3"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_3.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_3.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_3.dir/rule
+
+# Convenience name for target.
+Aufgabe2_3: Solutions/CMakeFiles/Aufgabe2_3.dir/rule
+
+.PHONY : Aufgabe2_3
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_3.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_3.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_1b.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_1b.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=11,12 "Built target Aufgabe2_1b"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1b.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_1b.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_1b.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1b.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1b.dir/rule
+
+# Convenience name for target.
+Aufgabe2_1b: Solutions/CMakeFiles/Aufgabe2_1b.dir/rule
+
+.PHONY : Aufgabe2_1b
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_1b.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_1b.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe3_1.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=19,20 "Built target Aufgabe3_1"
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe3_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe3_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+# Convenience name for target.
+Aufgabe3_1: Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+.PHONY : Aufgabe3_1
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe3_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_4a.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=17,18 "Built target Aufgabe2_4a"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_4a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+# Convenience name for target.
+Aufgabe2_4a: Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+.PHONY : Aufgabe2_4a
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_4a.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe1_1.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=1,2 "Built target Aufgabe1_1"
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe1_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+# Convenience name for target.
+Aufgabe1_1: Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+.PHONY : Aufgabe1_1
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe1_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe2_2.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=13,14 "Built target Aufgabe2_2"
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe2_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+# Convenience name for target.
+Aufgabe2_2: Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+.PHONY : Aufgabe2_2
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe2_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Solutions/CMakeFiles/Aufgabe1_3.dir
+
+# All Build rule for target.
+Solutions/CMakeFiles/Aufgabe1_3.dir/all: CMakeFiles/cf_cg.dir/all
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/depend
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles --progress-num=5,6 "Built target Aufgabe1_3"
+.PHONY : Solutions/CMakeFiles/Aufgabe1_3.dir/all
+
+# Include target in all.
+all: Solutions/CMakeFiles/Aufgabe1_3.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Solutions/CMakeFiles/Aufgabe1_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject/CMakeFiles 0
+.PHONY : Solutions/CMakeFiles/Aufgabe1_3.dir/rule
+
+# Convenience name for target.
+Aufgabe1_3: Solutions/CMakeFiles/Aufgabe1_3.dir/rule
+
+.PHONY : Aufgabe1_3
+
+# clean rule for target.
+Solutions/CMakeFiles/Aufgabe1_3.dir/clean:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/clean
+.PHONY : Solutions/CMakeFiles/Aufgabe1_3.dir/clean
+
+# clean rule for target.
+clean: Solutions/CMakeFiles/Aufgabe1_3.dir/clean
 
 .PHONY : clean
 

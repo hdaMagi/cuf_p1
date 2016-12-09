@@ -111,46 +111,508 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Solutions/CMakeFiles/whatever.dir/rule:
-	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/whatever.dir/rule
-.PHONY : Solutions/CMakeFiles/whatever.dir/rule
+Solutions/CMakeFiles/Aufgabe2_1.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/rule
 
 # Convenience name for target.
-whatever: Solutions/CMakeFiles/whatever.dir/rule
+Aufgabe2_1: Solutions/CMakeFiles/Aufgabe2_1.dir/rule
 
-.PHONY : whatever
+.PHONY : Aufgabe2_1
 
 # fast build rule for target.
-whatever/fast:
-	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/build
-.PHONY : whatever/fast
+Aufgabe2_1/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
+.PHONY : Aufgabe2_1/fast
 
-whatever.o: whatever.cpp.o
+# Convenience name for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule
 
-.PHONY : whatever.o
+# Convenience name for target.
+Zusatzaufgabe1_2: Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule
+
+.PHONY : Zusatzaufgabe1_2
+
+# fast build rule for target.
+Zusatzaufgabe1_2/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build
+.PHONY : Zusatzaufgabe1_2/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe1_2.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_2.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe1_2.dir/rule
+
+# Convenience name for target.
+Aufgabe1_2: Solutions/CMakeFiles/Aufgabe1_2.dir/rule
+
+.PHONY : Aufgabe1_2
+
+# fast build rule for target.
+Aufgabe1_2/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/build
+.PHONY : Aufgabe1_2/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe1_4.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_4.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe1_4.dir/rule
+
+# Convenience name for target.
+Aufgabe1_4: Solutions/CMakeFiles/Aufgabe1_4.dir/rule
+
+.PHONY : Aufgabe1_4
+
+# fast build rule for target.
+Aufgabe1_4/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/build
+.PHONY : Aufgabe1_4/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule
+.PHONY : Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule
+
+# Convenience name for target.
+Zusatzaufgabe1_1: Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/rule
+
+.PHONY : Zusatzaufgabe1_1
+
+# fast build rule for target.
+Zusatzaufgabe1_1/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build
+.PHONY : Zusatzaufgabe1_1/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe2_3.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_3.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_3.dir/rule
+
+# Convenience name for target.
+Aufgabe2_3: Solutions/CMakeFiles/Aufgabe2_3.dir/rule
+
+.PHONY : Aufgabe2_3
+
+# fast build rule for target.
+Aufgabe2_3/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/build
+.PHONY : Aufgabe2_3/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe2_1b.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1b.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1b.dir/rule
+
+# Convenience name for target.
+Aufgabe2_1b: Solutions/CMakeFiles/Aufgabe2_1b.dir/rule
+
+.PHONY : Aufgabe2_1b
+
+# fast build rule for target.
+Aufgabe2_1b/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/build
+.PHONY : Aufgabe2_1b/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe3_1.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+# Convenience name for target.
+Aufgabe3_1: Solutions/CMakeFiles/Aufgabe3_1.dir/rule
+
+.PHONY : Aufgabe3_1
+
+# fast build rule for target.
+Aufgabe3_1/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
+.PHONY : Aufgabe3_1/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe2_4a.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+# Convenience name for target.
+Aufgabe2_4a: Solutions/CMakeFiles/Aufgabe2_4a.dir/rule
+
+.PHONY : Aufgabe2_4a
+
+# fast build rule for target.
+Aufgabe2_4a/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/build
+.PHONY : Aufgabe2_4a/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe1_1.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+# Convenience name for target.
+Aufgabe1_1: Solutions/CMakeFiles/Aufgabe1_1.dir/rule
+
+.PHONY : Aufgabe1_1
+
+# fast build rule for target.
+Aufgabe1_1/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
+.PHONY : Aufgabe1_1/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe2_2.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+# Convenience name for target.
+Aufgabe2_2: Solutions/CMakeFiles/Aufgabe2_2.dir/rule
+
+.PHONY : Aufgabe2_2
+
+# fast build rule for target.
+Aufgabe2_2/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
+.PHONY : Aufgabe2_2/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe1_3.dir/rule:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe1_3.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe1_3.dir/rule
+
+# Convenience name for target.
+Aufgabe1_3: Solutions/CMakeFiles/Aufgabe1_3.dir/rule
+
+.PHONY : Aufgabe1_3
+
+# fast build rule for target.
+Aufgabe1_3/fast:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/build
+.PHONY : Aufgabe1_3/fast
+
+Aufgabe1_1.o: Aufgabe1_1.cpp.o
+
+.PHONY : Aufgabe1_1.o
 
 # target to build an object file
-whatever.cpp.o:
-	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/whatever.cpp.o
-.PHONY : whatever.cpp.o
+Aufgabe1_1.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/Aufgabe1_1.cpp.o
+.PHONY : Aufgabe1_1.cpp.o
 
-whatever.i: whatever.cpp.i
+Aufgabe1_1.i: Aufgabe1_1.cpp.i
 
-.PHONY : whatever.i
+.PHONY : Aufgabe1_1.i
 
 # target to preprocess a source file
-whatever.cpp.i:
-	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/whatever.cpp.i
-.PHONY : whatever.cpp.i
+Aufgabe1_1.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/Aufgabe1_1.cpp.i
+.PHONY : Aufgabe1_1.cpp.i
 
-whatever.s: whatever.cpp.s
+Aufgabe1_1.s: Aufgabe1_1.cpp.s
 
-.PHONY : whatever.s
+.PHONY : Aufgabe1_1.s
 
 # target to generate assembly for a file
-whatever.cpp.s:
-	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/whatever.dir/build.make Solutions/CMakeFiles/whatever.dir/whatever.cpp.s
-.PHONY : whatever.cpp.s
+Aufgabe1_1.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/Aufgabe1_1.cpp.s
+.PHONY : Aufgabe1_1.cpp.s
+
+Aufgabe1_2.o: Aufgabe1_2.cpp.o
+
+.PHONY : Aufgabe1_2.o
+
+# target to build an object file
+Aufgabe1_2.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/Aufgabe1_2.cpp.o
+.PHONY : Aufgabe1_2.cpp.o
+
+Aufgabe1_2.i: Aufgabe1_2.cpp.i
+
+.PHONY : Aufgabe1_2.i
+
+# target to preprocess a source file
+Aufgabe1_2.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/Aufgabe1_2.cpp.i
+.PHONY : Aufgabe1_2.cpp.i
+
+Aufgabe1_2.s: Aufgabe1_2.cpp.s
+
+.PHONY : Aufgabe1_2.s
+
+# target to generate assembly for a file
+Aufgabe1_2.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/Aufgabe1_2.cpp.s
+.PHONY : Aufgabe1_2.cpp.s
+
+Aufgabe1_3.o: Aufgabe1_3.cpp.o
+
+.PHONY : Aufgabe1_3.o
+
+# target to build an object file
+Aufgabe1_3.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/Aufgabe1_3.cpp.o
+.PHONY : Aufgabe1_3.cpp.o
+
+Aufgabe1_3.i: Aufgabe1_3.cpp.i
+
+.PHONY : Aufgabe1_3.i
+
+# target to preprocess a source file
+Aufgabe1_3.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/Aufgabe1_3.cpp.i
+.PHONY : Aufgabe1_3.cpp.i
+
+Aufgabe1_3.s: Aufgabe1_3.cpp.s
+
+.PHONY : Aufgabe1_3.s
+
+# target to generate assembly for a file
+Aufgabe1_3.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/Aufgabe1_3.cpp.s
+.PHONY : Aufgabe1_3.cpp.s
+
+Aufgabe1_4.o: Aufgabe1_4.cpp.o
+
+.PHONY : Aufgabe1_4.o
+
+# target to build an object file
+Aufgabe1_4.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/Aufgabe1_4.cpp.o
+.PHONY : Aufgabe1_4.cpp.o
+
+Aufgabe1_4.i: Aufgabe1_4.cpp.i
+
+.PHONY : Aufgabe1_4.i
+
+# target to preprocess a source file
+Aufgabe1_4.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/Aufgabe1_4.cpp.i
+.PHONY : Aufgabe1_4.cpp.i
+
+Aufgabe1_4.s: Aufgabe1_4.cpp.s
+
+.PHONY : Aufgabe1_4.s
+
+# target to generate assembly for a file
+Aufgabe1_4.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe1_4.dir/build.make Solutions/CMakeFiles/Aufgabe1_4.dir/Aufgabe1_4.cpp.s
+.PHONY : Aufgabe1_4.cpp.s
+
+Aufgabe2_1.o: Aufgabe2_1.cpp.o
+
+.PHONY : Aufgabe2_1.o
+
+# target to build an object file
+Aufgabe2_1.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/Aufgabe2_1.cpp.o
+.PHONY : Aufgabe2_1.cpp.o
+
+Aufgabe2_1.i: Aufgabe2_1.cpp.i
+
+.PHONY : Aufgabe2_1.i
+
+# target to preprocess a source file
+Aufgabe2_1.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/Aufgabe2_1.cpp.i
+.PHONY : Aufgabe2_1.cpp.i
+
+Aufgabe2_1.s: Aufgabe2_1.cpp.s
+
+.PHONY : Aufgabe2_1.s
+
+# target to generate assembly for a file
+Aufgabe2_1.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/Aufgabe2_1.cpp.s
+.PHONY : Aufgabe2_1.cpp.s
+
+Aufgabe2_1b.o: Aufgabe2_1b.cpp.o
+
+.PHONY : Aufgabe2_1b.o
+
+# target to build an object file
+Aufgabe2_1b.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/Aufgabe2_1b.cpp.o
+.PHONY : Aufgabe2_1b.cpp.o
+
+Aufgabe2_1b.i: Aufgabe2_1b.cpp.i
+
+.PHONY : Aufgabe2_1b.i
+
+# target to preprocess a source file
+Aufgabe2_1b.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/Aufgabe2_1b.cpp.i
+.PHONY : Aufgabe2_1b.cpp.i
+
+Aufgabe2_1b.s: Aufgabe2_1b.cpp.s
+
+.PHONY : Aufgabe2_1b.s
+
+# target to generate assembly for a file
+Aufgabe2_1b.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/Aufgabe2_1b.cpp.s
+.PHONY : Aufgabe2_1b.cpp.s
+
+Aufgabe2_2.o: Aufgabe2_2.cpp.o
+
+.PHONY : Aufgabe2_2.o
+
+# target to build an object file
+Aufgabe2_2.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/Aufgabe2_2.cpp.o
+.PHONY : Aufgabe2_2.cpp.o
+
+Aufgabe2_2.i: Aufgabe2_2.cpp.i
+
+.PHONY : Aufgabe2_2.i
+
+# target to preprocess a source file
+Aufgabe2_2.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/Aufgabe2_2.cpp.i
+.PHONY : Aufgabe2_2.cpp.i
+
+Aufgabe2_2.s: Aufgabe2_2.cpp.s
+
+.PHONY : Aufgabe2_2.s
+
+# target to generate assembly for a file
+Aufgabe2_2.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/Aufgabe2_2.cpp.s
+.PHONY : Aufgabe2_2.cpp.s
+
+Aufgabe2_3.o: Aufgabe2_3.cpp.o
+
+.PHONY : Aufgabe2_3.o
+
+# target to build an object file
+Aufgabe2_3.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/Aufgabe2_3.cpp.o
+.PHONY : Aufgabe2_3.cpp.o
+
+Aufgabe2_3.i: Aufgabe2_3.cpp.i
+
+.PHONY : Aufgabe2_3.i
+
+# target to preprocess a source file
+Aufgabe2_3.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/Aufgabe2_3.cpp.i
+.PHONY : Aufgabe2_3.cpp.i
+
+Aufgabe2_3.s: Aufgabe2_3.cpp.s
+
+.PHONY : Aufgabe2_3.s
+
+# target to generate assembly for a file
+Aufgabe2_3.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/Aufgabe2_3.cpp.s
+.PHONY : Aufgabe2_3.cpp.s
+
+Aufgabe2_4a.o: Aufgabe2_4a.cpp.o
+
+.PHONY : Aufgabe2_4a.o
+
+# target to build an object file
+Aufgabe2_4a.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/Aufgabe2_4a.cpp.o
+.PHONY : Aufgabe2_4a.cpp.o
+
+Aufgabe2_4a.i: Aufgabe2_4a.cpp.i
+
+.PHONY : Aufgabe2_4a.i
+
+# target to preprocess a source file
+Aufgabe2_4a.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/Aufgabe2_4a.cpp.i
+.PHONY : Aufgabe2_4a.cpp.i
+
+Aufgabe2_4a.s: Aufgabe2_4a.cpp.s
+
+.PHONY : Aufgabe2_4a.s
+
+# target to generate assembly for a file
+Aufgabe2_4a.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/Aufgabe2_4a.cpp.s
+.PHONY : Aufgabe2_4a.cpp.s
+
+Aufgabe3_1.o: Aufgabe3_1.cpp.o
+
+.PHONY : Aufgabe3_1.o
+
+# target to build an object file
+Aufgabe3_1.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o
+.PHONY : Aufgabe3_1.cpp.o
+
+Aufgabe3_1.i: Aufgabe3_1.cpp.i
+
+.PHONY : Aufgabe3_1.i
+
+# target to preprocess a source file
+Aufgabe3_1.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.i
+.PHONY : Aufgabe3_1.cpp.i
+
+Aufgabe3_1.s: Aufgabe3_1.cpp.s
+
+.PHONY : Aufgabe3_1.s
+
+# target to generate assembly for a file
+Aufgabe3_1.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.s
+.PHONY : Aufgabe3_1.cpp.s
+
+Zusatzaufgabe1_1.o: Zusatzaufgabe1_1.cpp.o
+
+.PHONY : Zusatzaufgabe1_1.o
+
+# target to build an object file
+Zusatzaufgabe1_1.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/Zusatzaufgabe1_1.cpp.o
+.PHONY : Zusatzaufgabe1_1.cpp.o
+
+Zusatzaufgabe1_1.i: Zusatzaufgabe1_1.cpp.i
+
+.PHONY : Zusatzaufgabe1_1.i
+
+# target to preprocess a source file
+Zusatzaufgabe1_1.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/Zusatzaufgabe1_1.cpp.i
+.PHONY : Zusatzaufgabe1_1.cpp.i
+
+Zusatzaufgabe1_1.s: Zusatzaufgabe1_1.cpp.s
+
+.PHONY : Zusatzaufgabe1_1.s
+
+# target to generate assembly for a file
+Zusatzaufgabe1_1.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_1.dir/Zusatzaufgabe1_1.cpp.s
+.PHONY : Zusatzaufgabe1_1.cpp.s
+
+Zusatzaufgabe1_2.o: Zusatzaufgabe1_2.cpp.o
+
+.PHONY : Zusatzaufgabe1_2.o
+
+# target to build an object file
+Zusatzaufgabe1_2.cpp.o:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/Zusatzaufgabe1_2.cpp.o
+.PHONY : Zusatzaufgabe1_2.cpp.o
+
+Zusatzaufgabe1_2.i: Zusatzaufgabe1_2.cpp.i
+
+.PHONY : Zusatzaufgabe1_2.i
+
+# target to preprocess a source file
+Zusatzaufgabe1_2.cpp.i:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/Zusatzaufgabe1_2.cpp.i
+.PHONY : Zusatzaufgabe1_2.cpp.i
+
+Zusatzaufgabe1_2.s: Zusatzaufgabe1_2.cpp.s
+
+.PHONY : Zusatzaufgabe1_2.s
+
+# target to generate assembly for a file
+Zusatzaufgabe1_2.cpp.s:
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/MakeFileProject && $(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/Zusatzaufgabe1_2.cpp.s
+.PHONY : Zusatzaufgabe1_2.cpp.s
 
 # Help Target
 help:
@@ -159,11 +621,55 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... Aufgabe2_1"
 	@echo "... edit_cache"
-	@echo "... whatever"
-	@echo "... whatever.o"
-	@echo "... whatever.i"
-	@echo "... whatever.s"
+	@echo "... Zusatzaufgabe1_2"
+	@echo "... Aufgabe1_2"
+	@echo "... Aufgabe1_4"
+	@echo "... Zusatzaufgabe1_1"
+	@echo "... Aufgabe2_3"
+	@echo "... Aufgabe2_1b"
+	@echo "... Aufgabe3_1"
+	@echo "... Aufgabe2_4a"
+	@echo "... Aufgabe1_1"
+	@echo "... Aufgabe2_2"
+	@echo "... Aufgabe1_3"
+	@echo "... Aufgabe1_1.o"
+	@echo "... Aufgabe1_1.i"
+	@echo "... Aufgabe1_1.s"
+	@echo "... Aufgabe1_2.o"
+	@echo "... Aufgabe1_2.i"
+	@echo "... Aufgabe1_2.s"
+	@echo "... Aufgabe1_3.o"
+	@echo "... Aufgabe1_3.i"
+	@echo "... Aufgabe1_3.s"
+	@echo "... Aufgabe1_4.o"
+	@echo "... Aufgabe1_4.i"
+	@echo "... Aufgabe1_4.s"
+	@echo "... Aufgabe2_1.o"
+	@echo "... Aufgabe2_1.i"
+	@echo "... Aufgabe2_1.s"
+	@echo "... Aufgabe2_1b.o"
+	@echo "... Aufgabe2_1b.i"
+	@echo "... Aufgabe2_1b.s"
+	@echo "... Aufgabe2_2.o"
+	@echo "... Aufgabe2_2.i"
+	@echo "... Aufgabe2_2.s"
+	@echo "... Aufgabe2_3.o"
+	@echo "... Aufgabe2_3.i"
+	@echo "... Aufgabe2_3.s"
+	@echo "... Aufgabe2_4a.o"
+	@echo "... Aufgabe2_4a.i"
+	@echo "... Aufgabe2_4a.s"
+	@echo "... Aufgabe3_1.o"
+	@echo "... Aufgabe3_1.i"
+	@echo "... Aufgabe3_1.s"
+	@echo "... Zusatzaufgabe1_1.o"
+	@echo "... Zusatzaufgabe1_1.i"
+	@echo "... Zusatzaufgabe1_1.s"
+	@echo "... Zusatzaufgabe1_2.o"
+	@echo "... Zusatzaufgabe1_2.i"
+	@echo "... Zusatzaufgabe1_2.s"
 .PHONY : help
 
 

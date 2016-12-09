@@ -2,6 +2,8 @@ var searchData=
 [
   ['r',['r',['../structcf_1_1Color.html#abcc2e84db1b3b70b94dd651b0c8ff361',1,'cf::Color']]],
   ['radian2degree',['radian2degree',['../namespacecf.html#a539b7eb67b1b4595262fe88d82c9653f',1,'cf']]],
+  ['radius',['radius',['../structcf_1_1Circle.html#a0976a66a3fcd9f633a4af0c16e58d5ad',1,'cf::Circle::radius()'],['../structcf_1_1CirclePartition.html#a37c5ed07fb4e090a91234ba650c7bc9d',1,'cf::CirclePartition::radius()']]],
+  ['randomcolor',['RandomColor',['../structcf_1_1Color.html#a7d4ba7443871ba70f8054ab28fb0dc62',1,'cf::Color']]],
   ['read',['read',['../structcf_1_1IteratedFunctionSystem.html#a0f6b9733621cb9d498e7c904e2681ed7',1,'cf::IteratedFunctionSystem::read()'],['../structcf_1_1LindenmayerSystem.html#a3804255e49656a57b805a2933be39cef',1,'cf::LindenmayerSystem::read()'],['../structcf_1_1Orbit.html#aa3bed20b2efcb723d39873eedae158c1',1,'cf::Orbit::read()']]],
   ['readantstring',['readAntString',['../namespacecf.html#ae022ee595c7dc7cfdb26b54e1ec564a6',1,'cf']]],
   ['readdatfile',['readDATFile',['../namespacecf.html#a0fe18c6a5d903340d2db54b859277813',1,'cf']]],
@@ -10,6 +12,8 @@ var searchData=
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['readpalettefromfile',['readPaletteFromFile',['../namespacecf.html#ab29a929157c1a41b6fdfdcc55b01fae2',1,'cf']]],
   ['readstring',['readString',['../structcf_1_1Console.html#a62d98c34e78a9bcf5f2390bd092ced18',1,'cf::Console']]],
+  ['rect',['Rect',['../structcf_1_1Rect.html#ace8de92480f0e325a7068e11d265f475',1,'cf::Rect']]],
+  ['rect',['Rect',['../structcf_1_1Rect.html',1,'cf']]],
   ['red',['RED',['../structcf_1_1Color.html#adf7a2d2d7eafd84990232f9e1a34488d',1,'cf::Color']]],
   ['relativedirection',['RelativeDirection',['../structcf_1_1Direction.html#a16355563cf0d37b57a48db754eca86be',1,'cf::Direction']]],
   ['resetinterval',['resetInterval',['../classcf_1_1Window2D.html#afbf2f5c6cf4bd87eaf6da70b9dc0f644',1,'cf::Window2D']]],

@@ -1,7 +1,17 @@
 var searchData=
 [
-  ['tostring',['toString',['../structcf_1_1Direction.html#a2bfeb11b60c4cdeb1f902f6434709baa',1,'cf::Direction::toString(AbsoluteDirection absDir)'],['../structcf_1_1Direction.html#ad80c53291f283eecb7042b13d64f7620',1,'cf::Direction::toString(RelativeDirection relDir)']]],
-  ['transformpoint_5ffromimage_5ftointerval',['transformPoint_fromImage_toInterval',['../structcf_1_1WindowVectorized.html#a9b6712c2946bc785a9043fa0e721d2b3',1,'cf::WindowVectorized']]],
-  ['transformpoint_5ffrominterval_5ftoimage',['transformPoint_fromInterval_toImage',['../structcf_1_1WindowVectorized.html#a53fa3681fb4d4453de47293a04086bd3',1,'cf::WindowVectorized']]],
-  ['translateintervalpostion',['translateIntervalPostion',['../structcf_1_1Interval.html#a19e6e2e3b4bbd3cb390c85c8676a2346',1,'cf::Interval']]]
+  ['saveimage',['saveImage',['../classcf_1_1Window2D.html#a34ba485f68aa0c6b67246d9bc386e43c',1,'cf::Window2D']]],
+  ['setcamera',['setCamera',['../structcf_1_1Window3D.html#a6da2919db82dc06c4c310a3294371f1d',1,'cf::Window3D']]],
+  ['setcolor',['setColor',['../classcf_1_1Window2D.html#a65bfe2848a03c7233f5735945dea801e',1,'cf::Window2D']]],
+  ['setcolor_5fimagespace',['setColor_imageSpace',['../structcf_1_1WindowVectorized.html#ae1542e730e19d45314c44a49e8c4cbee',1,'cf::WindowVectorized']]],
+  ['setinterval',['setInterval',['../structcf_1_1WindowCoordinateSystem.html#a74ad00bd7ad700962c1f7b1781def721',1,'cf::WindowCoordinateSystem::setInterval()'],['../structcf_1_1WindowVectorized.html#ad9df33def08e2dd29e2e2ae7e1772ff1',1,'cf::WindowVectorized::setInterval()']]],
+  ['setinvertyaxis',['setInvertYAxis',['../classcf_1_1Window2D.html#a5e425e23bbea065f95366bce385c2ada',1,'cf::Window2D']]],
+  ['setmaxfps',['setMaxFPS',['../structcf_1_1Window3D.html#aaac7b42fce6071f8dd2b9c2b4dd5f905',1,'cf::Window3D']]],
+  ['setnewinterval',['setNewInterval',['../classcf_1_1Window2D.html#abed836502e2b3ca601ac5862a9c73595',1,'cf::Window2D']]],
+  ['setw',['setW',['../structcf_1_1Vec3.html#a0b633149d44e5be8f82ca7e9db9f2f74',1,'cf::Vec3']]],
+  ['setwindowdisplayscale',['setWindowDisplayScale',['../classcf_1_1Window2D.html#a2d2cf977a9bc9c8052eae52f92434d8f',1,'cf::Window2D']]],
+  ['setx',['setX',['../structcf_1_1Vec3.html#a000d71610d85db40afd719b0b3918579',1,'cf::Vec3']]],
+  ['sety',['setY',['../structcf_1_1Vec3.html#ad8373067a6d2179513823f7d93cbfcb1',1,'cf::Vec3']]],
+  ['show',['show',['../classcf_1_1Window2D.html#a703ddd866af4b19da4b391db2479fb4c',1,'cf::Window2D']]],
+  ['startdrawing',['startDrawing',['../structcf_1_1Window3D.html#abc2faf5ff7f052343443d18ad8821be0',1,'cf::Window3D']]]
 ];

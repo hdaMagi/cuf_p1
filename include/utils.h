@@ -139,6 +139,7 @@ struct Interval{
     float min;
     float max;
 
+    float translateIntervalPostion(const Interval& newInterval, float originalPosition) const;
     static float translateIntervalPostion(const Interval& originalInterval, const Interval& newInterval, float originalPosition);
     friend std::ostream& operator<<(std::ostream& os, const Interval& interval);
 };
@@ -153,14 +154,14 @@ struct Color{
     uint8_t g;
     uint8_t r;
 
-    Color  operator* (float value);
-    Color  operator/ (float value);
+    Color  operator* (float value) const;
+    Color  operator/ (float value) const;
 
     Color& operator*=(float value);
     Color& operator/=(float value);
 
-    Color  operator+ (const Color& c);
-    Color  operator- (const Color& c);
+    Color  operator+ (const Color& c) const;
+    Color  operator- (const Color& c) const;
 
     Color& operator+=(const Color& c);
     Color& operator-=(const Color& c);
@@ -168,11 +169,27 @@ struct Color{
     friend cf::Color operator*(float value, const cf::Color& c);
     friend cf::Color operator/(float value, const cf::Color& c);
 
-    bool operator==(const Color& c);
-    bool operator!=(const Color& c);
+    bool operator==(const Color& c) const;
+    bool operator!=(const Color& c) const;
+
+    bool operator< (const Color& c) const;
+    bool operator> (const Color& c) const;
+    bool operator<=(const Color& c) const;
+    bool operator>=(const Color& c) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Color& c);
+
+    /**
+     * @brief invert Invert a color, for example cf::Color::BLACK will be changed to cf::Color::WHITE
+     * @return Inverted cf::Color
+     */
     Color invert() const;
+
+    /**
+     * @brief RandomColor Produces a color with random red, green and blue channel
+     * @return Random cf::Color
+     */
+    static cf::Color RandomColor();
 
     static const Color MAGENTA;
     static const Color YELLOW;

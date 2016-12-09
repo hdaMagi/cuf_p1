@@ -18,5 +18,5 @@ var searchData=
   ['windowrasterized_2ehpp',['windowRasterized.hpp',['../windowRasterized_8hpp.html',1,'']]],
   ['windowvectorized',['WindowVectorized',['../structcf_1_1WindowVectorized.html',1,'cf']]],
   ['windowvectorized',['WindowVectorized',['../structcf_1_1WindowVectorized.html#a95bedae51e7232b281f067f97aadd0f2',1,'cf::WindowVectorized::WindowVectorized(int width, const cf::Interval &amp;range_x, const cf::Interval &amp;range_y, const char *windowName=&quot;Chaos and Fractals&quot;, const cf::Color &amp;startColor=cf::Color::BLACK)'],['../structcf_1_1WindowVectorized.html#abc0d10ae7254b544cc57b843a28ba659',1,'cf::WindowVectorized::WindowVectorized(const char *filePath, int width, const cf::Interval &amp;range_x, const cf::Interval &amp;range_y)']]],
-  ['windowvercorized_2ehpp',['windowVercorized.hpp',['../windowVercorized_8hpp.html',1,'']]]
+  ['windowvectorized_2ehpp',['windowVectorized.hpp',['../windowVectorized_8hpp.html',1,'']]]
 ];
