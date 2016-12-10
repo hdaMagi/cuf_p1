@@ -6,25 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe3_1.cpp
-LSystem.h
-/home/jannis/workspace_chaos_und_fraktale/Solutions/LSystem.h
-windowVercorized.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/windowVercorized.hpp
-math.h
--
-
-include/LSystem.h
+/home/jannis/workspace_chaos_und_fraktale/examples/terrainGenerator_example.cpp
+windowRasterized.hpp
+/home/jannis/workspace_chaos_und_fraktale/examples/windowRasterized.hpp
 string
 -
-vector
--
-memory
--
-glm/glm.hpp
--
-utils.h
-include/utils.h
 
 include/utils.h
 string
@@ -54,7 +40,7 @@ opencv2/opencv.hpp
 utils.h
 include/utils.h
 
-include/windowVercorized.hpp
+include/windowRasterized.hpp
 window2D.h
 include/window2D.h
 

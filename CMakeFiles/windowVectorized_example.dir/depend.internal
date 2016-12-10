@@ -5,4 +5,4 @@ CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o
  /home/jannis/workspace_chaos_und_fraktale/examples/windowVectorized_example.cpp
  include/utils.h
  include/window2D.h
- include/windowVercorized.hpp
+ include/windowVectorized.hpp

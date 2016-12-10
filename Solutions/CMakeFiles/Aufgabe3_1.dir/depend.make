@@ -4,4 +4,6 @@
 Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o: Solutions/Aufgabe3_1.cpp
 Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o: include/LSystem.h
 Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o: include/utils.h
+Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o: include/window2D.h
+Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o: include/windowVercorized.hpp
 

@@ -600,3 +600,51 @@ int main() {
 #endif
 }
 
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6d36a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6d36a.dir/build.make CMakeFiles/cmTC_6d36a.dir/build
+make[1]: Verzeichnis „/home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_6d36a.dir/src.c.o
+/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_6d36a.dir/src.c.o   -c /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6d36a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d36a.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_6d36a.dir/src.c.o  -o cmTC_6d36a -rdynamic 
+make[1]: Verzeichnis „/home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp“ wird verlassen
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0eba3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0eba3.dir/build.make CMakeFiles/cmTC_0eba3.dir/build
+make[1]: Verzeichnis „/home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_0eba3.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra  -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_0eba3.dir/src.cxx.o -c /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0eba3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eba3.dir/link.txt --verbose=1
+/usr/bin/c++     -Wall -Wextra  -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_0eba3.dir/src.cxx.o  -o cmTC_0eba3 -rdynamic 
+make[1]: Verzeichnis „/home/jannis/workspace_chaos_und_fraktale/CMakeFiles/CMakeTmp“ wird verlassen
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

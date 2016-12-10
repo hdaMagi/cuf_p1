@@ -5,3 +5,5 @@ Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.o
  /home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe3_1.cpp
  include/LSystem.h
  include/utils.h
+ include/window2D.h
+ include/windowVercorized.hpp

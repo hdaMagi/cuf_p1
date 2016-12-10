@@ -4,5 +4,5 @@
 CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o: examples/windowVectorized_example.cpp
 CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o: include/utils.h
 CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o: include/window2D.h
-CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o: include/windowVercorized.hpp
+CMakeFiles/windowVectorized_example.dir/examples/windowVectorized_example.cpp.o: include/windowVectorized.hpp
 

@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/jannis/workspace_chaos_und_fraktale/examples/windowVectorized_example.cpp
-windowVercorized.hpp
-/home/jannis/workspace_chaos_und_fraktale/examples/windowVercorized.hpp
+windowVectorized.hpp
+/home/jannis/workspace_chaos_und_fraktale/examples/windowVectorized.hpp
 string
 -
 sstream
@@ -44,7 +44,7 @@ opencv2/opencv.hpp
 utils.h
 include/utils.h
 
-include/windowVercorized.hpp
+include/windowVectorized.hpp
 window2D.h
 include/window2D.h
 
