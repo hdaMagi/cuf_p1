@@ -2,8 +2,8 @@
 #define LSYSTEM_H_H
 
 #include <string>
-#include <vector>
 #include <memory>
+#include <map>
 
 #include <glm/glm.hpp>
 
@@ -39,13 +39,13 @@ struct LindenmayerSystem{
     float getStartAngle() const;
     float getAdjustmentAngle() const;
 
-    const std::vector<std::pair<const char, const std::string> >& getAllProductions() const;
+    const std::map<char, const std::string>& getAllProductions() const;
 
 private:
     std::string m_Name;
 
     char m_Axiom;
-    std::vector<std::pair<const char, const std::string> > m_Productions;
+    std::map<char, const std::string> m_Productions;
 
 
     float m_Scale;
@@ -63,9 +63,19 @@ typedef LindenmayerSystem LSystem; // short version for lazy people like myself 
 
 
 
-
+/**
+ * @brief The LSystem_Controller struct\n
+ * This class enables easy iterating above a given iteration depth\n
+ *
+ * usage: \n
+ \verbatim
+ LSystem_Controller myController(<depth>, <lsystem>);
+ for (char c : myController)
+      std::cout << c;
+ \endverbatim
+ */
 struct LSystem_Controller{
-    LSystem_Controller(const size_t depth, const LSystem& LSystem);
+    LSystem_Controller(size_t depth, const LSystem& LSystem);
 
     struct iterator {
         const char& operator*();

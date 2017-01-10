@@ -15,7 +15,6 @@
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/rebuild_cache.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_4a.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe1_3.dir
-/home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_1.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_2.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe1_1.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Zusatzaufgabe1_1.dir
@@ -24,5 +23,7 @@
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_3.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_1b.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe3_1.dir
+/home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe2_1.dir
+/home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Aufgabe3_2.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/edit_cache.dir
 /home/jannis/workspace_chaos_und_fraktale/Solutions/CMakeFiles/Zusatzaufgabe1_2.dir

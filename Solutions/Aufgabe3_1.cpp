@@ -2,6 +2,7 @@
 #include "windowVercorized.hpp"
 #include <math.h>
 
+#define PI 3.14159265359
 int main(int argc, char** argv) {
     std::string next = "";
 
@@ -58,7 +59,7 @@ int main(int argc, char** argv) {
                   << "Number of productions"   << align << ls.getNumProductions()                    << '\n'
                   << "Clear window each time?" << align << (ls.clearWindowEachTime() ? "yes" : "no") << '\n'
                   << "Start angle"             << align << ls.getStartAngle()                        << '\n'
-                  << "Adjustment angle"        << align << ls.getAdjustmentAngel()                   << '\n'
+                  << "Adjustment angle"        << align << ls.getAdjustmentAngle()                   << '\n'
                   << "Scale"                   << align << ls.getScale()                             << '\n'
                   << "Interval X"              << align << ls.getRangeX()                            << '\n'
                   << "Interval Y"              << align << ls.getRangeY()                            << '\n'
@@ -72,7 +73,7 @@ int main(int argc, char** argv) {
 
 
         std::cout << std::endl << "--------------------------------------------" << std::endl;
-        cf::WindowVectorized image(500, { 0.0, 1.0}, { 0.0, 1.0}, "(P5+6 A1) Turtel", cf::Color::WHITE);
+        cf::WindowVectorized image(1000, { -10.0, 10.0}, { -10.0, 10.0}, "(P5+6 A1) Turtel", cf::Color::WHITE);
         std::string str;
         str.push_back(ls.getAxiom());
         int generations = 0;
@@ -80,25 +81,81 @@ int main(int argc, char** argv) {
         std::cin >> generations;
         cf::Point p1;
         cf::Point p2;
+        cf::Point tmp;
 
-        for (int step = 0; step <= generations; step++) {
+
+        p1.x = 0.0;
+        p1.y = 0.0;
+        double winkel_in_rad = ls.getStartAngle(); //(cf::degree2radian(ls.getStartAngle()));
+
+        p2.x = 0; //cos(cf::degree2radian(winkel_in_rad));
+        p2.y = 0; //sin(cf::degree2radian(winkel_in_rad));
+
+        std::cout << "Press Enter for next step....";
+        cf::Console::waitKey();
+
+
+        if (ls.clearWindowEachTime()) {
+            image.clear();
+            image.show();
+        }
+
+        for (int step = 1; step <= generations; step++) {
             std::string newStr = "";
-            double winkel_in_rad = ls.getStartAngle(); //(cf::degree2radian(ls.getStartAngle()));
+
+            image.clear();
+
+//            p1.x = 0.0;
+//            p1.y = 0;
+
+
+//            p2.x += cos(winkel_in_rad);
+//            p2.y += sin(winkel_in_rad);
+
+//            image.drawLine(p1 * ls.getScale() / (float) step, p2 * ls.getScale() / (float) step, 1, cf::Color::RED);
+//            image.show();
+
+//            p1.x = p2.x;
+//            p1.y = p2.y;
+
+//            winkel_in_rad = cf::degree2radian(60); //PI / 2;
+
+
+//            p2.x += cos(winkel_in_rad);
+//            p2.y += sin(winkel_in_rad);
+
+//            image.drawLine(p1 * ls.getScale() / (float) step, p2 * ls.getScale() / (float) step, 1, cf::Color::RED);
+//            image.show();
+
+//            p1.x = p2.x;
+//            p1.y = p2.y;
+
+//            winkel_in_rad -= cf::degree2radian(60); //PI / 2;
+//            winkel_in_rad -= cf::degree2radian(60); //PI / 2;
+//            p2.x += cos(winkel_in_rad);
+//            p2.y += sin(winkel_in_rad);
+
+//            image.drawLine(p1 * ls.getScale() / (float) step, p2 * ls.getScale() / (float) step, 1, cf::Color::RED);
+//            image.show();
+
+//            p1.x = p2.x;
+//            p1.y = p2.y;
+
+//            winkel_in_rad += cf::degree2radian(60); //PI / 2;
+
+//            p2.x += cos(winkel_in_rad);
+//            p2.y += sin(winkel_in_rad);
+
+//            image.drawLine(p1 * ls.getScale() / (float) step, p2 * ls.getScale() / (float) step, 1, cf::Color::RED);
+//            image.show();
 
             p1.x = 0.0;
             p1.y = 0.0;
-
-            p2.x = cos(winkel_in_rad) * step * ls.getScale();
-            p2.y = sin(winkel_in_rad) * step * ls.getScale();
-
-
-            if (ls.clearWindowEachTime()) {
-                image.clear();
-                image.show();
-            }
+            p2.x = 0.0;
+            p2.y = 0.0;
 
             std::cout <<"Generation "<< step << ": " << str << std::endl;
-            for(std::string::size_type i = 0; i < str.size(); ++i) {
+            for(std::string::size_type i = 0; i < str.size(); i++) {
                 const std::string* pStr = ls.getProduction(str[i]);
                 if (pStr != nullptr) {
                     newStr += *pStr;
@@ -106,27 +163,24 @@ int main(int argc, char** argv) {
                     newStr += str[i];
                 }
 
-
                 if ((str[i] >= char('A')) && (str[i] <= char('Z'))) {
                     // Ein Großer Buchstabe gefunden
-                    p2.x = (p2.x * cos(winkel_in_rad) - p2.y * sin(winkel_in_rad));
-                    p2.y = (p2.x * sin(winkel_in_rad) + p2.y * cos(winkel_in_rad));
+                    p1 = p2;
+                    p2.x += cos(winkel_in_rad) * (ls.getScale() / (float) step);
+                    p2.y += sin(winkel_in_rad) * (ls.getScale() / (float) step);
 
                     image.drawLine(p1, p2, 1, cf::Color::RED);
                     image.show();
 
-                    p1 = p2;
                 } else if ((str[i] >= char('a')) && (str[i] <= char('z'))) {
                     p1 = p2;
-                    p2.x = (p2.x * cos(winkel_in_rad) - p2.y * sin(winkel_in_rad));
-                    p2.y = (p2.x * sin(winkel_in_rad) + p2.y * cos(winkel_in_rad));
+                    p2.x += cos(winkel_in_rad);
+                    p2.y += sin(winkel_in_rad);
                 } else if(str[i] == '+') {
-                    //winkel_in_rad = cf::degree2radian(ls.getAdjustmentAngel());
-                    winkel_in_rad += ls.getAdjustmentAngel();
+                    winkel_in_rad += cf::degree2radian(ls.getAdjustmentAngle());
 
                 } else if(str[i] == '-') {
-                    //winkel_in_rad = cf::degree2radian(360-ls.getAdjustmentAngel());
-                    winkel_in_rad -= ls.getAdjustmentAngel();
+                    winkel_in_rad -= cf::degree2radian(ls.getAdjustmentAngle());
                 }
 
             }

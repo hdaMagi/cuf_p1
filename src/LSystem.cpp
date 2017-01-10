@@ -26,7 +26,12 @@ void LindenmayerSystem::read(const std::string& filePath){
     // read axiom
     std::getline(input, str);
     _removeWindowsSpecificCarriageReturn(str);
-    this->m_Axiom = str[0];
+    if (str.size() > 1){
+        this->m_Axiom = 'A';
+        this->m_Productions.emplace('A', str);
+    }
+    else
+        this->m_Axiom = str[0];
 
     // read num productions
     std::getline(input, str);
@@ -38,9 +43,7 @@ void LindenmayerSystem::read(const std::string& filePath){
         _removeWindowsSpecificCarriageReturn(str);
         char symbol = str[0];
         str = str.substr(str.find('>') + 1);
-        //str = str.substr(0, str.size() -1);
-
-        this->m_Productions.push_back(std::make_pair(symbol, str));
+        this->m_Productions.emplace(symbol, str);
     }
 
     std::getline(input, str);
@@ -102,10 +105,9 @@ char LindenmayerSystem::getAxiom() const{
 }
 
 const std::string* LindenmayerSystem::getProduction(char symbol) const{
-    for (std::size_t i = 0; i < this->m_Productions.size(); ++i){
-        if (this->m_Productions[i].first == symbol)
-            return &this->m_Productions[i].second;
-    }
+    auto found = this->m_Productions.find(symbol);
+    if (found != this->m_Productions.end())
+        return &found->second;
     return nullptr;
 }
 
@@ -135,7 +137,7 @@ float LindenmayerSystem::getAdjustmentAngle() const{
     return this->m_AdjustmentAngle;
 }
 
-const std::vector<std::pair<const char, const std::string> > &LindenmayerSystem::getAllProductions() const{
+const std::map<char, const std::string>& LindenmayerSystem::getAllProductions() const{
     return this->m_Productions;
 }
 
@@ -144,7 +146,7 @@ std::ostream& operator<<(std::ostream& os, const Interval& interval){
     return os;
 }
 
-LSystem_Controller::LSystem_Controller(const size_t depth, const LSystem &LSystem) : m_Depth(depth), m_LSystem(LSystem){}
+LSystem_Controller::LSystem_Controller(size_t depth, const LSystem &LSystem) : m_Depth(depth), m_LSystem(LSystem){}
 
 LSystem_Controller::iterator LSystem_Controller::begin() { return iterator(this->m_LSystem, this->m_Depth, false); }
 

@@ -293,19 +293,6 @@ Aufgabe1_3/fast:
 .PHONY : Aufgabe1_3/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe2_1
-
-# Build rule for target.
-Aufgabe2_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_1
-.PHONY : Aufgabe2_1
-
-# fast build rule for target.
-Aufgabe2_1/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
-.PHONY : Aufgabe2_1/fast
-
-#=============================================================================
 # Target rules for targets named Aufgabe2_2
 
 # Build rule for target.
@@ -408,6 +395,32 @@ Aufgabe3_1: cmake_check_build_system
 Aufgabe3_1/fast:
 	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
 .PHONY : Aufgabe3_1/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe2_1
+
+# Build rule for target.
+Aufgabe2_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_1
+.PHONY : Aufgabe2_1
+
+# fast build rule for target.
+Aufgabe2_1/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
+.PHONY : Aufgabe2_1/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe3_2
+
+# Build rule for target.
+Aufgabe3_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe3_2
+.PHONY : Aufgabe3_2
+
+# fast build rule for target.
+Aufgabe3_2/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_2.dir/build.make Solutions/CMakeFiles/Aufgabe3_2.dir/build
+.PHONY : Aufgabe3_2/fast
 
 #=============================================================================
 # Target rules for targets named Zusatzaufgabe1_2
@@ -930,7 +943,6 @@ help:
 	@echo "... small_examples"
 	@echo "... Aufgabe2_4a"
 	@echo "... Aufgabe1_3"
-	@echo "... Aufgabe2_1"
 	@echo "... Aufgabe2_2"
 	@echo "... Aufgabe1_1"
 	@echo "... Zusatzaufgabe1_1"
@@ -939,6 +951,8 @@ help:
 	@echo "... Aufgabe2_3"
 	@echo "... Aufgabe2_1b"
 	@echo "... Aufgabe3_1"
+	@echo "... Aufgabe2_1"
+	@echo "... Aufgabe3_2"
 	@echo "... Zusatzaufgabe1_2"
 	@echo "... examples/computerGeometry_example.o"
 	@echo "... examples/computerGeometry_example.i"

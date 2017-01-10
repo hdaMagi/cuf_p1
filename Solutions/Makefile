@@ -141,21 +141,6 @@ Aufgabe1_3/fast:
 .PHONY : Aufgabe1_3/fast
 
 # Convenience name for target.
-Solutions/CMakeFiles/Aufgabe2_1.dir/rule:
-	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1.dir/rule
-.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/rule
-
-# Convenience name for target.
-Aufgabe2_1: Solutions/CMakeFiles/Aufgabe2_1.dir/rule
-
-.PHONY : Aufgabe2_1
-
-# fast build rule for target.
-Aufgabe2_1/fast:
-	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
-.PHONY : Aufgabe2_1/fast
-
-# Convenience name for target.
 Solutions/CMakeFiles/Aufgabe2_2.dir/rule:
 	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_2.dir/rule
 .PHONY : Solutions/CMakeFiles/Aufgabe2_2.dir/rule
@@ -274,6 +259,36 @@ Aufgabe3_1: Solutions/CMakeFiles/Aufgabe3_1.dir/rule
 Aufgabe3_1/fast:
 	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
 .PHONY : Aufgabe3_1/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe2_1.dir/rule:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe2_1.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe2_1.dir/rule
+
+# Convenience name for target.
+Aufgabe2_1: Solutions/CMakeFiles/Aufgabe2_1.dir/rule
+
+.PHONY : Aufgabe2_1
+
+# fast build rule for target.
+Aufgabe2_1/fast:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1.dir/build.make Solutions/CMakeFiles/Aufgabe2_1.dir/build
+.PHONY : Aufgabe2_1/fast
+
+# Convenience name for target.
+Solutions/CMakeFiles/Aufgabe3_2.dir/rule:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f CMakeFiles/Makefile2 Solutions/CMakeFiles/Aufgabe3_2.dir/rule
+.PHONY : Solutions/CMakeFiles/Aufgabe3_2.dir/rule
+
+# Convenience name for target.
+Aufgabe3_2: Solutions/CMakeFiles/Aufgabe3_2.dir/rule
+
+.PHONY : Aufgabe3_2
+
+# fast build rule for target.
+Aufgabe3_2/fast:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_2.dir/build.make Solutions/CMakeFiles/Aufgabe3_2.dir/build
+.PHONY : Aufgabe3_2/fast
 
 # Convenience name for target.
 Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/rule:
@@ -560,6 +575,33 @@ Aufgabe3_1.cpp.s:
 	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/Aufgabe3_1.cpp.s
 .PHONY : Aufgabe3_1.cpp.s
 
+Aufgabe3_2.o: Aufgabe3_2.cpp.o
+
+.PHONY : Aufgabe3_2.o
+
+# target to build an object file
+Aufgabe3_2.cpp.o:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_2.dir/build.make Solutions/CMakeFiles/Aufgabe3_2.dir/Aufgabe3_2.cpp.o
+.PHONY : Aufgabe3_2.cpp.o
+
+Aufgabe3_2.i: Aufgabe3_2.cpp.i
+
+.PHONY : Aufgabe3_2.i
+
+# target to preprocess a source file
+Aufgabe3_2.cpp.i:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_2.dir/build.make Solutions/CMakeFiles/Aufgabe3_2.dir/Aufgabe3_2.cpp.i
+.PHONY : Aufgabe3_2.cpp.i
+
+Aufgabe3_2.s: Aufgabe3_2.cpp.s
+
+.PHONY : Aufgabe3_2.s
+
+# target to generate assembly for a file
+Aufgabe3_2.cpp.s:
+	cd /home/jannis/workspace_chaos_und_fraktale && $(MAKE) -f Solutions/CMakeFiles/Aufgabe3_2.dir/build.make Solutions/CMakeFiles/Aufgabe3_2.dir/Aufgabe3_2.cpp.s
+.PHONY : Aufgabe3_2.cpp.s
+
 Zusatzaufgabe1_1.o: Zusatzaufgabe1_1.cpp.o
 
 .PHONY : Zusatzaufgabe1_1.o
@@ -623,7 +665,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Aufgabe2_4a"
 	@echo "... Aufgabe1_3"
-	@echo "... Aufgabe2_1"
 	@echo "... Aufgabe2_2"
 	@echo "... Aufgabe1_1"
 	@echo "... Zusatzaufgabe1_1"
@@ -632,6 +673,8 @@ help:
 	@echo "... Aufgabe2_3"
 	@echo "... Aufgabe2_1b"
 	@echo "... Aufgabe3_1"
+	@echo "... Aufgabe2_1"
+	@echo "... Aufgabe3_2"
 	@echo "... edit_cache"
 	@echo "... Zusatzaufgabe1_2"
 	@echo "... Aufgabe1_1.o"
@@ -664,6 +707,9 @@ help:
 	@echo "... Aufgabe3_1.o"
 	@echo "... Aufgabe3_1.i"
 	@echo "... Aufgabe3_1.s"
+	@echo "... Aufgabe3_2.o"
+	@echo "... Aufgabe3_2.i"
+	@echo "... Aufgabe3_2.s"
 	@echo "... Zusatzaufgabe1_1.o"
 	@echo "... Zusatzaufgabe1_1.i"
 	@echo "... Zusatzaufgabe1_1.s"
