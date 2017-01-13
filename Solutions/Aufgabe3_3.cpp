@@ -25,43 +25,87 @@ public:
         nextDir = rotMat * nextDir;
         nextDir *= this->ls.getScale() / (float) (this->generation+1);
 
+        glm::vec4 startPos;
+        glm::mat4x4 transformation;
+        std::vector<glm::mat4x4> transStack;
+        std::vector<glm::vec4> posStack;
+
         std::vector<glm::vec4> stack;
         stack.push_back(nextDir);
         for(std::string::size_type i = 0; i < this->axiom.size(); i++) {
             if ((this->axiom[i] >= char('A')) && (this->axiom[i] <= char('Z'))) {
                 glm::vec4 dir = stack.at(stack.size()-1);
-                this->drawCylinder(nextDir , this->m_StartPos + dir, this->m_Diameter , cf::Color::RandomColor());
-                dir = dir + nextDir;
+
+                glm::vec4 tmp(1,0,0, 1);
+                tmp = transformation * tmp;
+
+
+                //this->drawCylinder(nextDir , this->m_StartPos + dir, this->m_Diameter , cf::Color::RED);
+                this->drawCylinder(tmp, startPos, this->m_Diameter , cf::Color::RED);
+                //dir = dir + nextDir;
+                dir = dir + tmp;
                 stack.at(stack.size()-1) = dir;
+                startPos += tmp;
+
+
             } else if ((this->axiom[i] >= char('a')) && (this->axiom[i] <= char('z'))) {
                 glm::vec4 dir = stack.at(stack.size()-1);
                 dir += nextDir;
                 stack.at(stack.size()-1) = dir;
-            } else if(this->axiom[i] == '+') {
+
+
+
+                glm::vec4 tmp(1,0,0, 1);
+                tmp = transformation * tmp;
+                startPos += tmp;
+
+
+
+            } else if(this->axiom[i] == '+') { //links
                 // left rotation around z-axis
                 nextDir = glm::rotate(this->m_AngleAdjustment,     glm::vec3(0, 0, 1)) * nextDir;
-            } else if(this->axiom[i] == '-') {
+                transformation *= glm::rotate(this->m_AngleAdjustment,     glm::vec3(0, 0, 1));
+
+            } else if(this->axiom[i] == '-') { //rechts
                 // rigth rotation around z-axis
                 nextDir = glm::rotate(this->m_neg_AngleAdjustment, glm::vec3(0, 0, 1)) * nextDir;
-            } else if(this->axiom[i] == '&') {
+                transformation *= glm::rotate(this->m_neg_AngleAdjustment, glm::vec3(0, 0, 1));
+            } else if(this->axiom[i] == '&') { //abwärts
                 // left rotation around y-axis
                 nextDir = glm::rotate(this->m_AngleAdjustment,      glm::vec3(0, 1, 0)) * nextDir;
-            } else if(this->axiom[i] == '^') {
+                transformation *= glm::rotate(this->m_AngleAdjustment,      glm::vec3(0, 1, 0));
+            } else if(this->axiom[i] == '^') { //aufwärts
                 // rigth rotation around y-axis
                 nextDir = glm::rotate(this->m_neg_AngleAdjustment,  glm::vec3(0, 1, 0)) * nextDir;
-            } else if(this->axiom[i] == '*') {
+                transformation *= glm::rotate(this->m_neg_AngleAdjustment,  glm::vec3(0, 1, 0));
+            } else if(this->axiom[i] == '*') { //rollen
                 // left rotation around x-axis
                 nextDir = glm::rotate(this->m_AngleAdjustment,      glm::vec3(1, 0, 0)) * nextDir;
-            } else if(this->axiom[i] == '/') {
+                transformation *= glm::rotate(this->m_AngleAdjustment,      glm::vec3(1, 0, 0));
+            } else if(this->axiom[i] == '/') { //rollen
                 // rigth rotation around x-axis
                 nextDir = glm::rotate(this->m_neg_AngleAdjustment,  glm::vec3(1, 0, 0)) * nextDir;
+                transformation *= glm::rotate(this->m_neg_AngleAdjustment,  glm::vec3(1, 0, 0));
             } else if(this->axiom[i] == '[') {
                 glm::vec4 dir = stack.at(stack.size()-1);
                 dir += nextDir;
                 stack.push_back(dir);
+
+                transStack.push_back(transformation);
+                posStack.push_back(startPos);
+
+
             } else if(this->axiom[i] == ']') {
                 stack.pop_back();
+
+
+                transformation = transStack.back();
+                transStack.pop_back();
+                startPos = posStack.back();
+                posStack.pop_back();
+
             }
+
         }
     }
     std::string getAxiom(void) {
