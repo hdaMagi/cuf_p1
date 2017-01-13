@@ -42,6 +42,11 @@ public:
 
         this->drawCylinder(dir , this->m_StartPos      , this->m_Diameter        , color );
         this->drawCylinder(dir2, this->m_StartPos + dir, this->m_Diameter * 0.75f, color2);
+        dir += dir2;
+        dir2 = rotMat2 * dir2;
+        rotMat2 = glm::rotate(cf::degree2radian(90), glm::vec3(0, 1, 0));
+        dir2 = rotMat2 * dir2;
+        this->drawCylinder(dir2, this->m_StartPos + dir, this->m_Diameter        , color);
     }
     void handleKeyboardInput(unsigned char key, int x, int y) override{
         printf("Key: %c pressed at mouse position: %d, %d\r", key, x, y);
@@ -67,6 +72,39 @@ public:
         // change cylinder length
         if (key > '0' && key <= '9')
             this->m_Length = key - '0';
+    }
+
+    bool handleMousePressedMovement(MouseButton btn, int x, int y) override {
+        std::string button = "N/A";
+        switch (btn) {
+        case MouseButton::CENTER: button = "middle"; break;
+        case MouseButton::LEFT:   button = "left";   break;
+        case MouseButton::RIGHT:  button = "right";  break;
+        default: break;
+        }
+        std::cout << "Mouse moved to (" << x << "," << y << ") while the "
+                  << button << " button was pressed." << std::endl;
+        return false; // Set returnvalue to true to prevent camera movement
+    }
+
+    void handleMousePressEvent(MouseButton btn, MouseButtonEvent ev, int x, int y) override {
+        std::string button = "N/A";
+        std::string event = "N/A";
+        switch (btn) {
+        case MouseButton::CENTER:     button = "middle";     break;
+        case MouseButton::LEFT:       button = "left";       break;
+        case MouseButton::RIGHT:      button = "right";      break;
+        case MouseButton::WHEEL_UP:   button = "wheel up";   break;
+        case MouseButton::WHEEL_DOWN: button = "wheel down"; break;
+        default: break;
+        }
+        switch (ev) {
+        case MouseButtonEvent::PRESSED:  event = "pressed";  break;
+        case MouseButtonEvent::RELEASED: event = "released"; break;
+        default: break;
+        }
+        std::cout << "Mouse at (" << x << "," << y << ") while the " << button
+                  << " button was " << event << "." << std::endl;
     }
 
 private:

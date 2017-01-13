@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe2_3.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/Aufgabe2_3.cpp
 IFS.h
-/home/jannis/workspace_chaos_und_fraktale/Solutions/IFS.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/IFS.h
 windowRasterized.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/windowRasterized.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/windowRasterized.hpp
 windowVercorized.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/windowVercorized.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/windowVercorized.hpp
 globals.h
-/home/jannis/workspace_chaos_und_fraktale/Solutions/globals.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/globals.h
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/globals.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/globals.h
 utils.h
 -
 unistd.h

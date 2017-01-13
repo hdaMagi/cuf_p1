@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe1_3.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/Aufgabe1_3.cpp
 iostream
 -
 windowRasterized.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/windowRasterized.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/windowRasterized.hpp
 iostream
 -
 random

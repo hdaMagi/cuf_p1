@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/examples/lin_example.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/lin_example.cpp
 LSystem.h
-/home/jannis/workspace_chaos_und_fraktale/examples/LSystem.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/LSystem.h
 
 include/LSystem.h
 string

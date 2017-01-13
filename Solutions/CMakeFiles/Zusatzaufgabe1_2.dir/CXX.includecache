@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/Zusatzaufgabe1_2.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/Zusatzaufgabe1_2.cpp
 iostream
 -
 windowRasterized.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/windowRasterized.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/windowRasterized.hpp
 iostream
 -
 random
@@ -18,7 +18,7 @@ random
 string
 -
 bigInt.h
-/home/jannis/workspace_chaos_und_fraktale/Solutions/bigInt.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/bigInt.h
 
 include/bigInt.h
 cassert

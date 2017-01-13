@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jannis/workspace_chaos_und_fraktale
+CMAKE_SOURCE_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jannis/workspace_chaos_und_fraktale
+CMAKE_BINARY_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cf_cg.dir/depend.make
@@ -57,42 +57,42 @@ include CMakeFiles/cf_cg.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cf_cg.dir/flags.make
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.o: CMakeFiles/cf_cg.dir/flags.make
-CMakeFiles/cf_cg.dir/src/window2D.cpp.o: src/window2D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cf_cg.dir/src/window2D.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/window2D.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/window2D.cpp
+CMakeFiles/cf_cg.dir/src/window3D.cpp.o: CMakeFiles/cf_cg.dir/flags.make
+CMakeFiles/cf_cg.dir/src/window3D.cpp.o: src/window3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cf_cg.dir/src/window3D.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/window3D.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window3D.cpp
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/window2D.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/window2D.cpp > CMakeFiles/cf_cg.dir/src/window2D.cpp.i
+CMakeFiles/cf_cg.dir/src/window3D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/window3D.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window3D.cpp > CMakeFiles/cf_cg.dir/src/window3D.cpp.i
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/window2D.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/window2D.cpp -o CMakeFiles/cf_cg.dir/src/window2D.cpp.s
+CMakeFiles/cf_cg.dir/src/window3D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/window3D.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window3D.cpp -o CMakeFiles/cf_cg.dir/src/window3D.cpp.s
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires:
+CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires:
 
-.PHONY : CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
+.PHONY : CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides: CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides.build
-.PHONY : CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides
+CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides: CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides.build
+.PHONY : CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides
 
-CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/window2D.cpp.o
+CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/window3D.cpp.o
 
 
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.o: CMakeFiles/cf_cg.dir/flags.make
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.o: src/bigInt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cf_cg.dir/src/bigInt.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/bigInt.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/bigInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cf_cg.dir/src/bigInt.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/bigInt.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/bigInt.cpp
 
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/bigInt.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/bigInt.cpp > CMakeFiles/cf_cg.dir/src/bigInt.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/bigInt.cpp > CMakeFiles/cf_cg.dir/src/bigInt.cpp.i
 
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/bigInt.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/bigInt.cpp -o CMakeFiles/cf_cg.dir/src/bigInt.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/bigInt.cpp -o CMakeFiles/cf_cg.dir/src/bigInt.cpp.s
 
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.o.requires:
 
@@ -105,42 +105,42 @@ CMakeFiles/cf_cg.dir/src/bigInt.cpp.o.provides: CMakeFiles/cf_cg.dir/src/bigInt.
 CMakeFiles/cf_cg.dir/src/bigInt.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/bigInt.cpp.o
 
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.o: CMakeFiles/cf_cg.dir/flags.make
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.o: src/LSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cf_cg.dir/src/LSystem.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/LSystem.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/LSystem.cpp
+CMakeFiles/cf_cg.dir/src/IFS.cpp.o: CMakeFiles/cf_cg.dir/flags.make
+CMakeFiles/cf_cg.dir/src/IFS.cpp.o: src/IFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cf_cg.dir/src/IFS.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/IFS.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/IFS.cpp
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/LSystem.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/LSystem.cpp > CMakeFiles/cf_cg.dir/src/LSystem.cpp.i
+CMakeFiles/cf_cg.dir/src/IFS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/IFS.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/IFS.cpp > CMakeFiles/cf_cg.dir/src/IFS.cpp.i
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/LSystem.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/LSystem.cpp -o CMakeFiles/cf_cg.dir/src/LSystem.cpp.s
+CMakeFiles/cf_cg.dir/src/IFS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/IFS.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/IFS.cpp -o CMakeFiles/cf_cg.dir/src/IFS.cpp.s
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires:
+CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires:
 
-.PHONY : CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
+.PHONY : CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides.build
-.PHONY : CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides
+CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides: CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides.build
+.PHONY : CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides
 
-CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o
+CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/IFS.cpp.o
 
 
 CMakeFiles/cf_cg.dir/src/utils.cpp.o: CMakeFiles/cf_cg.dir/flags.make
 CMakeFiles/cf_cg.dir/src/utils.cpp.o: src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cf_cg.dir/src/utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/utils.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cf_cg.dir/src/utils.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/utils.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/utils.cpp
 
 CMakeFiles/cf_cg.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/utils.cpp > CMakeFiles/cf_cg.dir/src/utils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/utils.cpp > CMakeFiles/cf_cg.dir/src/utils.cpp.i
 
 CMakeFiles/cf_cg.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/utils.cpp -o CMakeFiles/cf_cg.dir/src/utils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/utils.cpp -o CMakeFiles/cf_cg.dir/src/utils.cpp.s
 
 CMakeFiles/cf_cg.dir/src/utils.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/cf_cg.dir/src/utils.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/ut
 
 CMakeFiles/cf_cg.dir/src/ORB.cpp.o: CMakeFiles/cf_cg.dir/flags.make
 CMakeFiles/cf_cg.dir/src/ORB.cpp.o: src/ORB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cf_cg.dir/src/ORB.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/ORB.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/ORB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cf_cg.dir/src/ORB.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/ORB.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/ORB.cpp
 
 CMakeFiles/cf_cg.dir/src/ORB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/ORB.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/ORB.cpp > CMakeFiles/cf_cg.dir/src/ORB.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/ORB.cpp > CMakeFiles/cf_cg.dir/src/ORB.cpp.i
 
 CMakeFiles/cf_cg.dir/src/ORB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/ORB.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/ORB.cpp -o CMakeFiles/cf_cg.dir/src/ORB.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/ORB.cpp -o CMakeFiles/cf_cg.dir/src/ORB.cpp.s
 
 CMakeFiles/cf_cg.dir/src/ORB.cpp.o.requires:
 
@@ -177,77 +177,77 @@ CMakeFiles/cf_cg.dir/src/ORB.cpp.o.provides: CMakeFiles/cf_cg.dir/src/ORB.cpp.o.
 CMakeFiles/cf_cg.dir/src/ORB.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/ORB.cpp.o
 
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.o: CMakeFiles/cf_cg.dir/flags.make
-CMakeFiles/cf_cg.dir/src/IFS.cpp.o: src/IFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cf_cg.dir/src/IFS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/IFS.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/IFS.cpp
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.o: CMakeFiles/cf_cg.dir/flags.make
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.o: src/LSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cf_cg.dir/src/LSystem.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/LSystem.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/LSystem.cpp
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/IFS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/IFS.cpp > CMakeFiles/cf_cg.dir/src/IFS.cpp.i
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/LSystem.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/LSystem.cpp > CMakeFiles/cf_cg.dir/src/LSystem.cpp.i
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/IFS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/IFS.cpp -o CMakeFiles/cf_cg.dir/src/IFS.cpp.s
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/LSystem.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/LSystem.cpp -o CMakeFiles/cf_cg.dir/src/LSystem.cpp.s
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires:
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires:
 
-.PHONY : CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
+.PHONY : CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides: CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides.build
-.PHONY : CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides.build
+.PHONY : CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides
 
-CMakeFiles/cf_cg.dir/src/IFS.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/IFS.cpp.o
+CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o
 
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.o: CMakeFiles/cf_cg.dir/flags.make
-CMakeFiles/cf_cg.dir/src/window3D.cpp.o: src/window3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cf_cg.dir/src/window3D.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/window3D.cpp.o -c /home/jannis/workspace_chaos_und_fraktale/src/window3D.cpp
+CMakeFiles/cf_cg.dir/src/window2D.cpp.o: CMakeFiles/cf_cg.dir/flags.make
+CMakeFiles/cf_cg.dir/src/window2D.cpp.o: src/window2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cf_cg.dir/src/window2D.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cf_cg.dir/src/window2D.cpp.o -c /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window2D.cpp
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/window3D.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jannis/workspace_chaos_und_fraktale/src/window3D.cpp > CMakeFiles/cf_cg.dir/src/window3D.cpp.i
+CMakeFiles/cf_cg.dir/src/window2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cf_cg.dir/src/window2D.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window2D.cpp > CMakeFiles/cf_cg.dir/src/window2D.cpp.i
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/window3D.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jannis/workspace_chaos_und_fraktale/src/window3D.cpp -o CMakeFiles/cf_cg.dir/src/window3D.cpp.s
+CMakeFiles/cf_cg.dir/src/window2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cf_cg.dir/src/window2D.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window2D.cpp -o CMakeFiles/cf_cg.dir/src/window2D.cpp.s
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires:
+CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires:
 
-.PHONY : CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
+.PHONY : CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides: CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides.build
-.PHONY : CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides
+CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides: CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides.build
+.PHONY : CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides
 
-CMakeFiles/cf_cg.dir/src/window3D.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/window3D.cpp.o
+CMakeFiles/cf_cg.dir/src/window2D.cpp.o.provides.build: CMakeFiles/cf_cg.dir/src/window2D.cpp.o
 
 
 # Object files for target cf_cg
 cf_cg_OBJECTS = \
-"CMakeFiles/cf_cg.dir/src/window2D.cpp.o" \
+"CMakeFiles/cf_cg.dir/src/window3D.cpp.o" \
 "CMakeFiles/cf_cg.dir/src/bigInt.cpp.o" \
-"CMakeFiles/cf_cg.dir/src/LSystem.cpp.o" \
+"CMakeFiles/cf_cg.dir/src/IFS.cpp.o" \
 "CMakeFiles/cf_cg.dir/src/utils.cpp.o" \
 "CMakeFiles/cf_cg.dir/src/ORB.cpp.o" \
-"CMakeFiles/cf_cg.dir/src/IFS.cpp.o" \
-"CMakeFiles/cf_cg.dir/src/window3D.cpp.o"
+"CMakeFiles/cf_cg.dir/src/LSystem.cpp.o" \
+"CMakeFiles/cf_cg.dir/src/window2D.cpp.o"
 
 # External object files for target cf_cg
 cf_cg_EXTERNAL_OBJECTS =
 
-lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/window2D.cpp.o
+lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/window3D.cpp.o
 lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/bigInt.cpp.o
-lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o
+lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/IFS.cpp.o
 lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/utils.cpp.o
 lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/ORB.cpp.o
-lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/IFS.cpp.o
-lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/window3D.cpp.o
+lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o
+lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/src/window2D.cpp.o
 lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/build.make
 lib/Debug/libcf_cg.a: CMakeFiles/cf_cg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jannis/workspace_chaos_und_fraktale/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib/Debug/libcf_cg.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib/Debug/libcf_cg.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cf_cg.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cf_cg.dir/link.txt --verbose=$(VERBOSE)
 
@@ -256,13 +256,13 @@ CMakeFiles/cf_cg.dir/build: lib/Debug/libcf_cg.a
 
 .PHONY : CMakeFiles/cf_cg.dir/build
 
-CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
+CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
 CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/bigInt.cpp.o.requires
-CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
+CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
 CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/utils.cpp.o.requires
 CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/ORB.cpp.o.requires
-CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/IFS.cpp.o.requires
-CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/window3D.cpp.o.requires
+CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/LSystem.cpp.o.requires
+CMakeFiles/cf_cg.dir/requires: CMakeFiles/cf_cg.dir/src/window2D.cpp.o.requires
 
 .PHONY : CMakeFiles/cf_cg.dir/requires
 
@@ -271,6 +271,6 @@ CMakeFiles/cf_cg.dir/clean:
 .PHONY : CMakeFiles/cf_cg.dir/clean
 
 CMakeFiles/cf_cg.dir/depend:
-	cd /home/jannis/workspace_chaos_und_fraktale && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jannis/workspace_chaos_und_fraktale /home/jannis/workspace_chaos_und_fraktale /home/jannis/workspace_chaos_und_fraktale /home/jannis/workspace_chaos_und_fraktale /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/cf_cg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles/cf_cg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cf_cg.dir/depend
 

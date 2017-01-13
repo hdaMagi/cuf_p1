@@ -1,4 +1,4 @@
-# Install script for directory: /home/jannis/workspace_chaos_und_fraktale/Solutions
+# Install script for directory: /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

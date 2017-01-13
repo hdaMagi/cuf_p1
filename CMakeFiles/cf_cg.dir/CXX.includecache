@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/src/IFS.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/IFS.cpp
 IFS.h
-/home/jannis/workspace_chaos_und_fraktale/src/IFS.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/IFS.h
 stdexcept
 -
 fstream
@@ -16,33 +16,33 @@ fstream
 sstream
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/LSystem.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/LSystem.cpp
 LSystem.h
-/home/jannis/workspace_chaos_und_fraktale/src/LSystem.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/LSystem.h
 fstream
 -
 sstream
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/ORB.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/ORB.cpp
 ORB.h
-/home/jannis/workspace_chaos_und_fraktale/src/ORB.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/ORB.h
 fstream
 -
 sstream
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/bigInt.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/bigInt.cpp
 bigInt.h
-/home/jannis/workspace_chaos_und_fraktale/src/bigInt.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/bigInt.h
 unistd.h
 -
 sys/utsname.h
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/utils.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/utils.cpp
 utils.h
-/home/jannis/workspace_chaos_und_fraktale/src/utils.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/utils.h
 iomanip
 -
 random
@@ -52,15 +52,15 @@ opencv2/opencv.hpp
 Windows.h
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/window2D.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window2D.cpp
 window2D.h
-/home/jannis/workspace_chaos_und_fraktale/src/window2D.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window2D.h
 Windows.h
 -
 
-/home/jannis/workspace_chaos_und_fraktale/src/window3D.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window3D.cpp
 window3D.h
-/home/jannis/workspace_chaos_und_fraktale/src/window3D.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/src/window3D.h
 chrono
 -
 thread

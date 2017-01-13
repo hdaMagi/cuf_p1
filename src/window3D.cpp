@@ -30,6 +30,12 @@ Window3D::Window3D(int* argc, char** argv, int width, int height, const char* ti
 	this->m_AdditionalKeyboardCallback = [this](unsigned char key, int x, int y) {
 		this->handleKeyboardInput(key, x, y);
 	};
+    this->m_AdditionalMouseMotionCallback = [this](MouseButton button, int x, int y){
+        return this->handleMousePressedMovement(button, x, y);
+    };
+    this->m_AdditionalMouseClickCallback = [this](MouseButton button, MouseButtonEvent event, int x, int y){
+        this->handleMousePressEvent(button, event, x, y);
+    };
 
     // enable lighting by default
     glEnable(GL_LIGHTING);
@@ -125,10 +131,10 @@ void _KeyboardCallbackFunction(unsigned char key, int x, int y){
 
     // adjust left/up vectors to correct length
     left = glm::normalize(left);
-    left *= windowPtr->m_CameraAdjustment;
+    left *= windowPtr->m_CameraAdjustment * windowPtr->m_LookAtDistance / 10.f;
 
     up = glm::normalize(up);
-    up *= windowPtr->m_CameraAdjustment;
+    up *= windowPtr->m_CameraAdjustment * windowPtr->m_LookAtDistance / 10.f;
 
     switch (key){
     case 'a':
@@ -198,11 +204,58 @@ void _KeyboardCallbackFunction(unsigned char key, int x, int y){
 }
 
 void Window3D::handleKeyboardInput(unsigned char, int, int){}
+bool Window3D::handleMousePressedMovement(MouseButton, int, int){return false;}
+void Window3D::handleMousePressEvent(MouseButton, MouseButtonEvent, int, int){}
+
+static int _MouseCtlLastX = -1, _MouseCtlLastY = -1, _MouseCtlBtn = -1;
+static bool _MouseCtlLastZoomMode = false;
+void _MouseCtlClickCallbackFunction(int button, int press, int y, int x){
+    _MouseCtlLastX = _MouseCtlLastY = -1;
+    _MouseCtlBtn = button;
+
+    if (button == 3){
+        windowPtr->m_LookAtDistance -= windowPtr->m_DistAdjustment;
+        windowPtr->_AdjustCamera();
+    }
+    else if (button == 4){
+        windowPtr->m_LookAtDistance += windowPtr->m_DistAdjustment;
+        windowPtr->_AdjustCamera();
+    }
+    else
+        _MouseCtlLastZoomMode = button == 2; // 0 = left, 1 = middle, 2 = right
+
+    if (windowPtr->m_AdditionalMouseClickCallback)
+        windowPtr->m_AdditionalMouseClickCallback(static_cast<Window3D::MouseButton>(button),
+                                                  (press == GLUT_DOWN)?Window3D::MouseButtonEvent::PRESSED:Window3D::MouseButtonEvent::RELEASED,
+                                                  x,
+                                                  y);
+}
+
+void _MouseCtlMotionCallbackFunction(int y, int x){
+    bool preventDefault = false;
+    if (windowPtr->m_AdditionalMouseMotionCallback)
+        preventDefault = windowPtr->m_AdditionalMouseMotionCallback(static_cast<Window3D::MouseButton>(_MouseCtlBtn),x,y);
+
+    if(!preventDefault){
+        if(_MouseCtlLastZoomMode){
+            windowPtr->m_LookAtDistance +=  (_MouseCtlLastX > -1 ? (_MouseCtlLastX-x)/glm::pi<float>() : 0.f);
+        }else{
+            windowPtr->m_RotationAngle_X += (_MouseCtlLastX > -1 ? _MouseCtlLastX-x : 0.f);
+            windowPtr->m_RotationAngle_Y += (_MouseCtlLastY > -1 ? _MouseCtlLastY-y : 0.f);
+        }
+        _MouseCtlLastY = y;
+        _MouseCtlLastX = x;
+    }
+    windowPtr->_AdjustCamera();
+}
+
 
 int Window3D::startDrawing(){
     windowPtr = this;
     glutKeyboardFunc(_KeyboardCallbackFunction);
     glutDisplayFunc(_DrawingFunction);
+    glutMotionFunc(_MouseCtlMotionCallbackFunction);
+    glutMouseFunc(_MouseCtlClickCallbackFunction);
 
     // enable light 0
     // this only works if 'GL_LIGHTING' is enabled (default)
@@ -250,7 +303,7 @@ void Window3D::drawCylinder(const glm::vec3& drawingDirection, const glm::vec3& 
         glScalef(diameter, diameter, diameter);
 
 #ifndef __APPLE__
-        glutSolidCylinder(1.f, glm::length(drawingDirection) / diameter, 10, 10);
+        glutSolidCylinder(1.0, double(glm::length(drawingDirection) / diameter), 10, 10);
 #else
 		glScalef(1.f, 1.f, glm::length(drawingDirection) / diameter);
 		glTranslatef(0.f, 0.f, 0.5f);
@@ -383,10 +436,11 @@ int Window3D::getWindowHeight() const{
     return this->m_Height;
 }
 
-void Window3D::setCamera(Window3D::CameraType type, glm::vec3 lookAt, float distance){
+void Window3D::setCamera(Window3D::CameraType type, glm::vec3 lookAt, float distance, glm::vec3 positionCorrection){
     this->m_CameraType     = type;
     this->m_LookAt         = lookAt;
     this->m_LookAtDistance = distance;
+    this->m_CameraPositionCorrection = positionCorrection;
     this->_AdjustCamera();
 }
 

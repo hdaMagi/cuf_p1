@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/examples/orb_example.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/orb_example.cpp
 ORB.h
-/home/jannis/workspace_chaos_und_fraktale/examples/ORB.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/ORB.h
 
 include/ORB.h
 utils.h

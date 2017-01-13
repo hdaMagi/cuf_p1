@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/Solutions/Aufgabe1_1.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/Aufgabe1_1.cpp
 computerGeometry.hpp
-/home/jannis/workspace_chaos_und_fraktale/Solutions/computerGeometry.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/computerGeometry.hpp
 iostream
 -
 math.h
-/home/jannis/workspace_chaos_und_fraktale/Solutions/math.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/Solutions/math.h
 unistd.h
 -
 sys/time.h

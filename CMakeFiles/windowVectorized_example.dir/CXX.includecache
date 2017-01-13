@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/examples/windowVectorized_example.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/windowVectorized_example.cpp
 windowVectorized.hpp
-/home/jannis/workspace_chaos_und_fraktale/examples/windowVectorized.hpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/windowVectorized.hpp
 string
 -
 sstream

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/examples/ifs_example.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/ifs_example.cpp
 IFS.h
-/home/jannis/workspace_chaos_und_fraktale/examples/IFS.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/IFS.h
 
 include/IFS.h
 utils.h

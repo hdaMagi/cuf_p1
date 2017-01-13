@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jannis/workspace_chaos_und_fraktale/examples/window_3D_example.cpp
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/window_3D_example.cpp
 utils.h
-/home/jannis/workspace_chaos_und_fraktale/examples/utils.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/utils.h
 window3D.h
-/home/jannis/workspace_chaos_und_fraktale/examples/window3D.h
+/home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/examples/window3D.h
 
 include/utils.h
 string

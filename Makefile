@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jannis/workspace_chaos_und_fraktale
+CMAKE_SOURCE_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jannis/workspace_chaos_und_fraktale
+CMAKE_BINARY_DIR = /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles /home/jannis/workspace_chaos_und_fraktale/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jannis/workspace_chaos_und_fraktale/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kiara/HDa/Master/01_WS1617/Chaos_und_Fraktale/Praktikum/ChaosAndFractals/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named computerGeometry_example
-
-# Build rule for target.
-computerGeometry_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 computerGeometry_example
-.PHONY : computerGeometry_example
-
-# fast build rule for target.
-computerGeometry_example/fast:
-	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/build
-.PHONY : computerGeometry_example/fast
-
-#=============================================================================
-# Target rules for targets named windowVectorized_example
-
-# Build rule for target.
-windowVectorized_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 windowVectorized_example
-.PHONY : windowVectorized_example
-
-# fast build rule for target.
-windowVectorized_example/fast:
-	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/build
-.PHONY : windowVectorized_example/fast
-
-#=============================================================================
 # Target rules for targets named lin_example
 
 # Build rule for target.
@@ -148,97 +122,6 @@ lin_example: cmake_check_build_system
 lin_example/fast:
 	$(MAKE) -f CMakeFiles/lin_example.dir/build.make CMakeFiles/lin_example.dir/build
 .PHONY : lin_example/fast
-
-#=============================================================================
-# Target rules for targets named window_3D_example
-
-# Build rule for target.
-window_3D_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 window_3D_example
-.PHONY : window_3D_example
-
-# fast build rule for target.
-window_3D_example/fast:
-	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/build
-.PHONY : window_3D_example/fast
-
-#=============================================================================
-# Target rules for targets named image_operations_example
-
-# Build rule for target.
-image_operations_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image_operations_example
-.PHONY : image_operations_example
-
-# fast build rule for target.
-image_operations_example/fast:
-	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/build
-.PHONY : image_operations_example/fast
-
-#=============================================================================
-# Target rules for targets named cf_cg
-
-# Build rule for target.
-cf_cg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cf_cg
-.PHONY : cf_cg
-
-# fast build rule for target.
-cf_cg/fast:
-	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/build
-.PHONY : cf_cg/fast
-
-#=============================================================================
-# Target rules for targets named windowRasterized_example
-
-# Build rule for target.
-windowRasterized_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 windowRasterized_example
-.PHONY : windowRasterized_example
-
-# fast build rule for target.
-windowRasterized_example/fast:
-	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/build
-.PHONY : windowRasterized_example/fast
-
-#=============================================================================
-# Target rules for targets named orb_example
-
-# Build rule for target.
-orb_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 orb_example
-.PHONY : orb_example
-
-# fast build rule for target.
-orb_example/fast:
-	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/build
-.PHONY : orb_example/fast
-
-#=============================================================================
-# Target rules for targets named terrain
-
-# Build rule for target.
-terrain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 terrain
-.PHONY : terrain
-
-# fast build rule for target.
-terrain/fast:
-	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/build
-.PHONY : terrain/fast
-
-#=============================================================================
-# Target rules for targets named terrainGenerator_example
-
-# Build rule for target.
-terrainGenerator_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 terrainGenerator_example
-.PHONY : terrainGenerator_example
-
-# fast build rule for target.
-terrainGenerator_example/fast:
-	$(MAKE) -f CMakeFiles/terrainGenerator_example.dir/build.make CMakeFiles/terrainGenerator_example.dir/build
-.PHONY : terrainGenerator_example/fast
 
 #=============================================================================
 # Target rules for targets named ifs_example
@@ -267,56 +150,147 @@ small_examples/fast:
 .PHONY : small_examples/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe2_4a
+# Target rules for targets named terrainGenerator_example
 
 # Build rule for target.
-Aufgabe2_4a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_4a
-.PHONY : Aufgabe2_4a
+terrainGenerator_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 terrainGenerator_example
+.PHONY : terrainGenerator_example
 
 # fast build rule for target.
-Aufgabe2_4a/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/build
-.PHONY : Aufgabe2_4a/fast
+terrainGenerator_example/fast:
+	$(MAKE) -f CMakeFiles/terrainGenerator_example.dir/build.make CMakeFiles/terrainGenerator_example.dir/build
+.PHONY : terrainGenerator_example/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe1_3
+# Target rules for targets named orb_example
 
 # Build rule for target.
-Aufgabe1_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_3
-.PHONY : Aufgabe1_3
+orb_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 orb_example
+.PHONY : orb_example
 
 # fast build rule for target.
-Aufgabe1_3/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/build
-.PHONY : Aufgabe1_3/fast
+orb_example/fast:
+	$(MAKE) -f CMakeFiles/orb_example.dir/build.make CMakeFiles/orb_example.dir/build
+.PHONY : orb_example/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe2_2
+# Target rules for targets named image_operations_example
 
 # Build rule for target.
-Aufgabe2_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_2
-.PHONY : Aufgabe2_2
+image_operations_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_operations_example
+.PHONY : image_operations_example
 
 # fast build rule for target.
-Aufgabe2_2/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
-.PHONY : Aufgabe2_2/fast
+image_operations_example/fast:
+	$(MAKE) -f CMakeFiles/image_operations_example.dir/build.make CMakeFiles/image_operations_example.dir/build
+.PHONY : image_operations_example/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe1_1
+# Target rules for targets named cf_cg
 
 # Build rule for target.
-Aufgabe1_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_1
-.PHONY : Aufgabe1_1
+cf_cg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cf_cg
+.PHONY : cf_cg
 
 # fast build rule for target.
-Aufgabe1_1/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
-.PHONY : Aufgabe1_1/fast
+cf_cg/fast:
+	$(MAKE) -f CMakeFiles/cf_cg.dir/build.make CMakeFiles/cf_cg.dir/build
+.PHONY : cf_cg/fast
+
+#=============================================================================
+# Target rules for targets named terrain
+
+# Build rule for target.
+terrain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 terrain
+.PHONY : terrain
+
+# fast build rule for target.
+terrain/fast:
+	$(MAKE) -f CMakeFiles/terrain.dir/build.make CMakeFiles/terrain.dir/build
+.PHONY : terrain/fast
+
+#=============================================================================
+# Target rules for targets named computerGeometry_example
+
+# Build rule for target.
+computerGeometry_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 computerGeometry_example
+.PHONY : computerGeometry_example
+
+# fast build rule for target.
+computerGeometry_example/fast:
+	$(MAKE) -f CMakeFiles/computerGeometry_example.dir/build.make CMakeFiles/computerGeometry_example.dir/build
+.PHONY : computerGeometry_example/fast
+
+#=============================================================================
+# Target rules for targets named windowVectorized_example
+
+# Build rule for target.
+windowVectorized_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 windowVectorized_example
+.PHONY : windowVectorized_example
+
+# fast build rule for target.
+windowVectorized_example/fast:
+	$(MAKE) -f CMakeFiles/windowVectorized_example.dir/build.make CMakeFiles/windowVectorized_example.dir/build
+.PHONY : windowVectorized_example/fast
+
+#=============================================================================
+# Target rules for targets named window_3D_example
+
+# Build rule for target.
+window_3D_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 window_3D_example
+.PHONY : window_3D_example
+
+# fast build rule for target.
+window_3D_example/fast:
+	$(MAKE) -f CMakeFiles/window_3D_example.dir/build.make CMakeFiles/window_3D_example.dir/build
+.PHONY : window_3D_example/fast
+
+#=============================================================================
+# Target rules for targets named windowRasterized_example
+
+# Build rule for target.
+windowRasterized_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 windowRasterized_example
+.PHONY : windowRasterized_example
+
+# fast build rule for target.
+windowRasterized_example/fast:
+	$(MAKE) -f CMakeFiles/windowRasterized_example.dir/build.make CMakeFiles/windowRasterized_example.dir/build
+.PHONY : windowRasterized_example/fast
+
+#=============================================================================
+# Target rules for targets named Zusatzaufgabe1_2
+
+# Build rule for target.
+Zusatzaufgabe1_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zusatzaufgabe1_2
+.PHONY : Zusatzaufgabe1_2
+
+# fast build rule for target.
+Zusatzaufgabe1_2/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build
+.PHONY : Zusatzaufgabe1_2/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe2_1b
+
+# Build rule for target.
+Aufgabe2_1b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_1b
+.PHONY : Aufgabe2_1b
+
+# fast build rule for target.
+Aufgabe2_1b/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/build
+.PHONY : Aufgabe2_1b/fast
 
 #=============================================================================
 # Target rules for targets named Zusatzaufgabe1_1
@@ -345,19 +319,6 @@ Aufgabe1_4/fast:
 .PHONY : Aufgabe1_4/fast
 
 #=============================================================================
-# Target rules for targets named Aufgabe1_2
-
-# Build rule for target.
-Aufgabe1_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_2
-.PHONY : Aufgabe1_2
-
-# fast build rule for target.
-Aufgabe1_2/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/build
-.PHONY : Aufgabe1_2/fast
-
-#=============================================================================
 # Target rules for targets named Aufgabe2_3
 
 # Build rule for target.
@@ -369,32 +330,6 @@ Aufgabe2_3: cmake_check_build_system
 Aufgabe2_3/fast:
 	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_3.dir/build.make Solutions/CMakeFiles/Aufgabe2_3.dir/build
 .PHONY : Aufgabe2_3/fast
-
-#=============================================================================
-# Target rules for targets named Aufgabe2_1b
-
-# Build rule for target.
-Aufgabe2_1b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_1b
-.PHONY : Aufgabe2_1b
-
-# fast build rule for target.
-Aufgabe2_1b/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_1b.dir/build.make Solutions/CMakeFiles/Aufgabe2_1b.dir/build
-.PHONY : Aufgabe2_1b/fast
-
-#=============================================================================
-# Target rules for targets named Aufgabe3_1
-
-# Build rule for target.
-Aufgabe3_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe3_1
-.PHONY : Aufgabe3_1
-
-# fast build rule for target.
-Aufgabe3_1/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
-.PHONY : Aufgabe3_1/fast
 
 #=============================================================================
 # Target rules for targets named Aufgabe2_1
@@ -423,17 +358,95 @@ Aufgabe3_2/fast:
 .PHONY : Aufgabe3_2/fast
 
 #=============================================================================
-# Target rules for targets named Zusatzaufgabe1_2
+# Target rules for targets named Aufgabe1_2
 
 # Build rule for target.
-Zusatzaufgabe1_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zusatzaufgabe1_2
-.PHONY : Zusatzaufgabe1_2
+Aufgabe1_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_2
+.PHONY : Aufgabe1_2
 
 # fast build rule for target.
-Zusatzaufgabe1_2/fast:
-	$(MAKE) -f Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build.make Solutions/CMakeFiles/Zusatzaufgabe1_2.dir/build
-.PHONY : Zusatzaufgabe1_2/fast
+Aufgabe1_2/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_2.dir/build.make Solutions/CMakeFiles/Aufgabe1_2.dir/build
+.PHONY : Aufgabe1_2/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe3_1
+
+# Build rule for target.
+Aufgabe3_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe3_1
+.PHONY : Aufgabe3_1
+
+# fast build rule for target.
+Aufgabe3_1/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_1.dir/build.make Solutions/CMakeFiles/Aufgabe3_1.dir/build
+.PHONY : Aufgabe3_1/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe2_4a
+
+# Build rule for target.
+Aufgabe2_4a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_4a
+.PHONY : Aufgabe2_4a
+
+# fast build rule for target.
+Aufgabe2_4a/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_4a.dir/build.make Solutions/CMakeFiles/Aufgabe2_4a.dir/build
+.PHONY : Aufgabe2_4a/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe3_3
+
+# Build rule for target.
+Aufgabe3_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe3_3
+.PHONY : Aufgabe3_3
+
+# fast build rule for target.
+Aufgabe3_3/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe3_3.dir/build.make Solutions/CMakeFiles/Aufgabe3_3.dir/build
+.PHONY : Aufgabe3_3/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe1_1
+
+# Build rule for target.
+Aufgabe1_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_1
+.PHONY : Aufgabe1_1
+
+# fast build rule for target.
+Aufgabe1_1/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_1.dir/build.make Solutions/CMakeFiles/Aufgabe1_1.dir/build
+.PHONY : Aufgabe1_1/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe2_2
+
+# Build rule for target.
+Aufgabe2_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe2_2
+.PHONY : Aufgabe2_2
+
+# fast build rule for target.
+Aufgabe2_2/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe2_2.dir/build.make Solutions/CMakeFiles/Aufgabe2_2.dir/build
+.PHONY : Aufgabe2_2/fast
+
+#=============================================================================
+# Target rules for targets named Aufgabe1_3
+
+# Build rule for target.
+Aufgabe1_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1_3
+.PHONY : Aufgabe1_3
+
+# fast build rule for target.
+Aufgabe1_3/fast:
+	$(MAKE) -f Solutions/CMakeFiles/Aufgabe1_3.dir/build.make Solutions/CMakeFiles/Aufgabe1_3.dir/build
+.PHONY : Aufgabe1_3/fast
 
 examples/computerGeometry_example.o: examples/computerGeometry_example.cpp.o
 
@@ -928,32 +941,33 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... computerGeometry_example"
-	@echo "... windowVectorized_example"
 	@echo "... lin_example"
-	@echo "... window_3D_example"
+	@echo "... ifs_example"
+	@echo "... small_examples"
+	@echo "... terrainGenerator_example"
+	@echo "... orb_example"
 	@echo "... rebuild_cache"
 	@echo "... image_operations_example"
 	@echo "... cf_cg"
-	@echo "... windowRasterized_example"
-	@echo "... orb_example"
 	@echo "... terrain"
-	@echo "... terrainGenerator_example"
-	@echo "... ifs_example"
-	@echo "... small_examples"
-	@echo "... Aufgabe2_4a"
-	@echo "... Aufgabe1_3"
-	@echo "... Aufgabe2_2"
-	@echo "... Aufgabe1_1"
+	@echo "... computerGeometry_example"
+	@echo "... windowVectorized_example"
+	@echo "... window_3D_example"
+	@echo "... windowRasterized_example"
+	@echo "... Zusatzaufgabe1_2"
+	@echo "... Aufgabe2_1b"
 	@echo "... Zusatzaufgabe1_1"
 	@echo "... Aufgabe1_4"
-	@echo "... Aufgabe1_2"
 	@echo "... Aufgabe2_3"
-	@echo "... Aufgabe2_1b"
-	@echo "... Aufgabe3_1"
 	@echo "... Aufgabe2_1"
 	@echo "... Aufgabe3_2"
-	@echo "... Zusatzaufgabe1_2"
+	@echo "... Aufgabe1_2"
+	@echo "... Aufgabe3_1"
+	@echo "... Aufgabe2_4a"
+	@echo "... Aufgabe3_3"
+	@echo "... Aufgabe1_1"
+	@echo "... Aufgabe2_2"
+	@echo "... Aufgabe1_3"
 	@echo "... examples/computerGeometry_example.o"
 	@echo "... examples/computerGeometry_example.i"
 	@echo "... examples/computerGeometry_example.s"
